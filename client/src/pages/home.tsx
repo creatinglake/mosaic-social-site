@@ -144,7 +144,7 @@ export default function Home() {
               <img 
                 src="/assets/diagrams/mosaic-coherence-hex.svg" 
                 alt="Mosaic coherence diagram showing governance, protocols, web standards, performance, business models, and spaces connected through Mosaic"
-                className="w-full max-w-[420px] h-auto object-contain"
+                className="w-full max-w-[550px] h-auto object-contain"
               />
             </div>
           </div>

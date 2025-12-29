@@ -1,22 +1,43 @@
-<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mosaic coherence diagram">
+<svg viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mosaic coherence diagram">
   <defs>
     <!-- R=85, Corner=10 -->
     <path id="hex" d="M 82.11,-5.00 Q 85.00,0.00 82.11,5.00 L 45.39,68.61 Q 42.50,73.61 36.73,73.61 L -36.73,73.61 Q -42.50,73.61 -45.39,68.61 L -82.11,5.00 Q -85.00,0.00 -82.11,-5.00 L -45.39,-68.61 Q -42.50,-73.61 -36.73,-73.61 L 36.73,-73.61 Q 42.50,-73.61 45.39,-68.61 Z" />
     <style>
       text { font-family: Inter, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; font-size: 20px; fill: #FFFFFF; font-weight: 700; pointer-events: none; }
       .center-text { fill: #333333; font-size: 28px; }
-      line { stroke: rgba(84,88,98,0.15); stroke-width: 1.5; }
+      line { stroke: #333333; stroke-width: 2; }
     </style>
   </defs>
 
-  <g transform="translate(400, 350)">
-    <!-- connection lines (faint) -->
-    <line x1="0" y1="0" x2="0" y2="-170" />
-    <line x1="0" y1="0" x2="147" y2="-85" />
-    <line x1="0" y1="0" x2="147" y2="85" />
-    <line x1="0" y1="0" x2="0" y2="170" />
-    <line x1="0" y1="0" x2="-147" y2="85" />
-    <line x1="0" y1="0" x2="-147" y2="-85" />
+  <g transform="translate(300, 300)">
+    <!-- connection lines (charcoal, starting outside center hex) -->
+    <!-- Center hex R approx 85, apothem approx 74. Start slightly outside: 76 -->
+    <!-- End points: 0, -170 etc. -->
+    
+    <!-- Top -->
+    <line x1="0" y1="-76" x2="0" y2="-170" />
+    <!-- Top Right (330 deg / -30 deg) -->
+    <!-- Start: x = 76 * cos(-30) = 65.8, y = 76 * sin(-30) = -38 -->
+    <!-- End: 147, -85 -->
+    <line x1="65.8" y1="-38" x2="147" y2="-85" />
+    
+    <!-- Bottom Right (30 deg) -->
+    <!-- Start: x = 76 * cos(30) = 65.8, y = 76 * sin(30) = 38 -->
+    <!-- End: 147, 85 -->
+    <line x1="65.8" y1="38" x2="147" y2="85" />
+    
+    <!-- Bottom -->
+    <line x1="0" y1="76" x2="0" y2="170" />
+    
+    <!-- Bottom Left (150 deg) -->
+    <!-- Start: x = 76 * cos(150) = -65.8, y = 76 * sin(150) = 38 -->
+    <!-- End: -147, 85 -->
+    <line x1="-65.8" y1="38" x2="-147" y2="85" />
+    
+    <!-- Top Left (210 deg / -150 deg) -->
+    <!-- Start: x = 76 * cos(210) = -65.8, y = 76 * sin(210) = -38 -->
+    <!-- End: -147, -85 -->
+    <line x1="-65.8" y1="-38" x2="-147" y2="-85" />
 
     <!-- Top: Light Blue #84B5DD -->
     <g transform="translate(0, -170)">
