@@ -4,7 +4,7 @@ import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink, Palette, 
 import heroImage from "@assets/MosaicHero_1767024748577.png";
 import problemImage from "@assets/generated_images/cracked_column_large_saturated.png";
 import townSquareImage from "@assets/generated_images/sunny_town_square_with_diverse_community_gathering.png";
-import audienceImage from "@assets/generated_images/subtle_abstract_network_of_connections_background.png";
+import audienceImage from "@assets/generated_images/subtle_contour_lines_abstract_background.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
@@ -248,7 +248,7 @@ export default function Home() {
                    <Palette size={24} />
                  </div>
                </div>
-               <p className="text-lg text-foreground/80 leading-relaxed">
+               <p className="text-base text-foreground/80 leading-relaxed">
                  who want direct, lasting relationships with their audiences—without platform middlemen deciding what gets seen or how you make money. Choose your own tools and business model. Your content, your identity, and your audience relationships belong to you.
                </p>
              </div>
@@ -262,7 +262,7 @@ export default function Home() {
                    <Users size={24} />
                  </div>
                </div>
-               <p className="text-lg text-foreground/80 leading-relaxed">
+               <p className="text-base text-foreground/80 leading-relaxed">
                  that need autonomy and tools tailored to their purpose. Set your own norms, moderation, and features—no one-size-fits-all rules imposed from above. Stay independent while connecting to the broader network.
                </p>
              </div>
@@ -276,7 +276,7 @@ export default function Home() {
                    <User size={24} />
                  </div>
                </div>
-               <p className="text-lg text-foreground/80 leading-relaxed">
+               <p className="text-base text-foreground/80 leading-relaxed">
                  seeking healthier, more intentional online spaces. Control what you see and how information reaches you. Choose which algorithms—or non-algorithmic filters—shape your experience. Built for individual sovereignty and well-being, not endless scrolling.
                </p>
              </div>
@@ -290,8 +290,8 @@ export default function Home() {
                    <Landmark size={24} />
                  </div>
                </div>
-               <p className="text-lg text-foreground/80 leading-relaxed">
-                 needs social infrastructure which is open, transparent, and accountable to the societies it shapes. Mosaic makes its structures auditable and its incentives explicit, enabling new forms of collective sensemaking that support a more resilient and participatory model of digital democracy.
+               <p className="text-base text-foreground/80 leading-relaxed">
+                 needs social infrastructure which is open, transparent, and accountable to the societies it shapes. Mosaic is an open and auditable ecosystem that enables new forms of collective sensemaking and a participatory model of digital democracy.
                </p>
              </div>
           </div>
