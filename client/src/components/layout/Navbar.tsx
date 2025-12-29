@@ -46,7 +46,7 @@ export default function Navbar() {
             <img 
               src={logo} 
               alt="Mosaic Logo" 
-              className="h-14 w-auto object-contain transition-all duration-300 relative z-10 group-hover:brightness-150" 
+              className="h-14 w-auto object-contain transition-all duration-300 relative z-10 group-hover:brightness-125" 
             />
           </a>
         </Link>
