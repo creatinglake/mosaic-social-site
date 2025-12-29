@@ -159,15 +159,15 @@ export default function Home() {
           <div className="text-center max-w-3xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-white">How Mosaic works</h2>
             <p className="text-xl text-primary-foreground/80">
-              Mosaic brings together four foundational elements into a coherent system:
+              Mosaic brings together four core components into a coherent ecosystem:
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {/* Element 1 */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-mosaic-gold/20 flex items-center justify-center mb-4 text-mosaic-gold">
-                <Users size={28} />
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="w-16 h-16 rounded-2xl bg-mosaic-gold/20 flex items-center justify-center mb-6 text-mosaic-gold">
+                <Users size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">People</h3>
               <p className="text-primary-foreground/70">
@@ -176,9 +176,9 @@ export default function Home() {
             </div>
 
             {/* Element 2 */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-mosaic-gold/20 flex items-center justify-center mb-4 text-mosaic-gold">
-                <Database size={28} />
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="w-16 h-16 rounded-2xl bg-mosaic-gold/20 flex items-center justify-center mb-6 text-mosaic-gold">
+                <Database size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Personal data</h3>
               <p className="text-primary-foreground/70">
@@ -187,9 +187,9 @@ export default function Home() {
             </div>
 
             {/* Element 3 */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-mosaic-gold/20 flex items-center justify-center mb-4 text-mosaic-gold">
-                <LayoutGrid size={28} />
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="w-16 h-16 rounded-2xl bg-mosaic-gold/20 flex items-center justify-center mb-6 text-mosaic-gold">
+                <LayoutGrid size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Spaces</h3>
               <p className="text-primary-foreground/70">
@@ -198,9 +198,9 @@ export default function Home() {
             </div>
 
             {/* Element 4 */}
-            <div className="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-colors">
-              <div className="w-12 h-12 rounded-lg bg-mosaic-gold/20 flex items-center justify-center mb-4 text-mosaic-gold">
-                <Radio size={28} />
+            <div className="flex flex-col items-center text-center p-6">
+              <div className="w-16 h-16 rounded-2xl bg-mosaic-gold/20 flex items-center justify-center mb-6 text-mosaic-gold">
+                <Radio size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">The River</h3>
               <p className="text-primary-foreground/70">
