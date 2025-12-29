@@ -22,7 +22,7 @@ export default function Home() {
             className="w-full h-full object-cover"
           />
           {/* Gradient Overlay: White top for logo, Darker bottom for text contrast */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-black/60 to-black/90" />
+          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-black/75 to-black/95" />
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center md:text-left pt-20">
