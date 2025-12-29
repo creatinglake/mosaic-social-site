@@ -51,16 +51,16 @@
       <text y="5">Governance</text>
     </g>
 
-    <!-- Bottom Right: Burgundy #7A1D26 -->
+    <!-- Bottom Right: Darker Terra Cotta (Previously Performance location, now Protocols) -->
     <g transform="translate(147, 85)">
-      <use xlink:href="#hex" href="#hex" fill="#7A1D26" />
-      <text y="5">Protocols</text>
+      <use xlink:href="#hex" href="#hex" fill="#B03C2F" />
+      <text y="5">Performance</text>
     </g>
 
-    <!-- Bottom: Terra Cotta #D04C3F -->
+    <!-- Bottom: Darker Burgundy (Previously Protocols location, now Performance) -->
     <g transform="translate(0, 170)">
-      <use xlink:href="#hex" href="#hex" fill="#D04C3F" />
-      <text y="5">Performance</text>
+      <use xlink:href="#hex" href="#hex" fill="#5A151C" />
+      <text y="5">Protocols</text>
     </g>
 
     <!-- Bottom Left: Navy #1E3F6B -->
