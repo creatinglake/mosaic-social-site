@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lucide-react";
 import heroImage from "@assets/MosaicHero_1767024748577.png";
-import problemImage from "@assets/generated_images/cracked_column_burgundy.png";
+import problemImage from "@assets/generated_images/cracked_column_final.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
