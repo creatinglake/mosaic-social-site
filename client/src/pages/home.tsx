@@ -4,6 +4,7 @@ import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lu
 import heroImage from "@assets/MosaicHero_1767024748577.png";
 import problemImage from "@assets/generated_images/cracked_column_large_saturated.png";
 import townSquareImage from "@assets/generated_images/sunny_town_square_with_diverse_community_gathering.png";
+import audienceImage from "@assets/generated_images/subtle_abstract_network_of_connections_background.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
@@ -223,33 +224,43 @@ export default function Home() {
       </section>
 
       {/* Audience Section */}
-      <section className="py-24 bg-muted/10">
-        <div className="container mx-auto px-4 md:px-6">
+      <section className="py-24 relative overflow-hidden">
+        {/* Background Image & Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={audienceImage} 
+            alt="Abstract network background" 
+            className="w-full h-full object-cover opacity-40"
+          />
+          <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]" />
+        </div>
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-primary">Who Mosaic is for</h2>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-             <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+             <div className="p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md transition-shadow">
                <h3 className="text-2xl font-bold text-primary mb-4">Creators</h3>
                <p className="text-lg text-foreground/80 leading-relaxed">
                  who want direct, lasting relationships with their audiences—without platform middlemen deciding what gets seen or how you make money. Choose your own tools and business model. Your content, your identity, and your audience relationships belong to you.
                </p>
              </div>
 
-             <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+             <div className="p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md transition-shadow">
                <h3 className="text-2xl font-bold text-primary mb-4">Communities</h3>
                <p className="text-lg text-foreground/80 leading-relaxed">
                  that need autonomy and tools tailored to their purpose. Set your own norms, moderation, and features—no one-size-fits-all rules imposed from above. Stay independent while connecting to the broader network.
                </p>
              </div>
 
-             <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+             <div className="p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md transition-shadow">
                <h3 className="text-2xl font-bold text-primary mb-4">Individuals</h3>
                <p className="text-lg text-foreground/80 leading-relaxed">
                  seeking healthier, more intentional online spaces. Control what you see and how information reaches you. Choose which algorithms—or non-algorithmic filters—shape your experience. Built for individual sovereignty and well-being, not endless scrolling.
                </p>
              </div>
 
-             <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+             <div className="p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md transition-shadow">
                <h3 className="text-2xl font-bold text-primary mb-4">Society and democracy</h3>
                <p className="text-lg text-foreground/80 leading-relaxed">
                  needs social infrastructure which is open, transparent, and accountable to the societies it shapes. Mosaic makes its structures auditable and its incentives explicit, enabling new forms of collective sensemaking that support a more resilient and participatory model of digital democracy.
