@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lucide-react";
 import heroImage from "@assets/MosaicHero_1767024748577.png";
-import problemImage from "@assets/generated_images/cracked_column_large_processed.png";
+import problemImage from "@assets/generated_images/cracked_column_large_saturated.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
@@ -60,7 +60,7 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
              <div className="order-2 md:order-1 relative flex justify-center">
-                <div className="absolute inset-0 bg-[#4e332f]/5 rounded-full blur-3xl opacity-50" />
+                <div className="absolute inset-0 bg-[#5E161C]/5 rounded-full blur-3xl opacity-50" />
                 <img 
                   src={problemImage} 
                   alt="Broken public forum column icon" 
@@ -68,7 +68,7 @@ export default function Home() {
                 />
              </div>
              <div className="order-1 md:order-2">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#4e332f]">Social media is failing society</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#5E161C]">Social media is failing society</h2>
                 <div className="prose prose-lg text-foreground/80 space-y-6">
                   <p>
                     The problem with today's social media isn't just content or moderation—it's structural.

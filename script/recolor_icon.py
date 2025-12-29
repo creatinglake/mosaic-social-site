@@ -2,8 +2,8 @@ import numpy as np
 from PIL import Image
 import os
 
-input_path = "attached_assets/generated_images/cracked_column_final.png"
-output_path = "attached_assets/generated_images/cracked_column_burgundy.png"
+input_path = "attached_assets/generated_images/cracked_column_large_processed.png"
+output_path = "attached_assets/generated_images/cracked_column_large_saturated.png"
 target_hex = "#5E161C"
 
 def hex_to_rgb(hex_color):
