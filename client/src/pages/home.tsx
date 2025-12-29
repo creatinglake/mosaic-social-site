@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink, Palette, User, Landmark } from "lucide-react";
 import heroImage from "@assets/MosaicHero_1767024748577.png";
-import problemImage from "@assets/generated_images/cracked_column_large_saturated.png";
+import problemImage from "@assets/CrackedCapitolSVG.svg";
 import townSquareImage from "@assets/generated_images/sunny_town_square_with_diverse_community_gathering.png";
 import audienceImage from "@assets/generated_images/subtle_contour_lines_abstract_background.png";
 
@@ -65,8 +65,8 @@ export default function Home() {
                 <div className="absolute inset-0 bg-[#5E161C]/5 rounded-full blur-3xl opacity-50" />
                 <img 
                   src={problemImage} 
-                  alt="Broken public forum column icon" 
-                  className="relative z-10 w-3/4 max-w-xs drop-shadow-sm hover:scale-105 transition-all duration-500"
+                  alt="Broken capitol building illustration" 
+                  className="relative z-10 w-full max-w-sm drop-shadow-sm hover:scale-105 transition-all duration-500"
                 />
              </div>
              <div className="order-1 md:order-2">
