@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lucide-react";
 import heroImage from "@assets/MosaicHero_1767024748577.png";
 import problemImage from "@assets/generated_images/cracked_column_large_saturated.png";
+import hopeImage from "@assets/generated_images/inspirational_sunlight_breaking_through_clouds_nature_background.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
@@ -86,18 +87,30 @@ export default function Home() {
       </section>
 
       {/* Hope Section */}
-      <section className="py-24 bg-background relative overflow-hidden">
-        <div className="absolute right-0 top-0 w-1/3 h-full bg-pattern-voronoi opacity-[0.05]" />
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">It doesn't have to be this way</h2>
-          <div className="prose prose-xl mx-auto text-foreground/80">
-            <p className="mb-8">
+      <section className="relative py-32 flex items-center justify-center overflow-hidden">
+        {/* Background Image & Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={hopeImage} 
+            alt="Sunlight breaking through clouds" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/80 mix-blend-multiply" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30" />
+        </div>
+
+        <div className="container mx-auto px-4 md:px-6 relative z-10 max-w-4xl text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8 text-white drop-shadow-md">
+            It doesn't have to be this way
+          </h2>
+          <div className="prose prose-xl mx-auto text-white/90 leading-relaxed font-medium space-y-8">
+            <p className="drop-shadow-sm">
               A healthier social media ecosystem is possible.
             </p>
-            <p>
+            <p className="drop-shadow-sm">
               Many of the core building blocks already exist: decentralized identity, personal data stores, open social protocols, and community-based platforms. What's missing is coherence—a way to connect these pieces into something people can actually use at scale.
             </p>
-            <p className="font-semibold text-primary">
+            <p className="font-bold text-white text-2xl drop-shadow-md">
               Mosaic's role is to provide that missing connective tissue.
             </p>
           </div>
