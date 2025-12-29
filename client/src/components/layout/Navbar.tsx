@@ -1,12 +1,22 @@
 import { Link, useLocation } from "wouter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import logo from "@assets/Mosaic_2026_Logo_PNG_Large_1767023913417.png";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const [location] = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const links = [
     { href: "/", label: "Home" },
@@ -17,12 +27,28 @@ export default function Navbar() {
     { href: "/contact", label: "Contact" },
   ];
 
+  const isTransparent = location === "/" && !scrolled;
+
   return (
-    <nav className="border-b border-border/40 bg-background/80 backdrop-blur-md sticky top-0 z-50">
+    <nav 
+      className={cn(
+        "fixed top-0 w-full z-50 transition-all duration-300",
+        isTransparent 
+          ? "bg-transparent border-transparent py-2" 
+          : "bg-background/90 backdrop-blur-md border-b border-border shadow-sm py-0"
+      )}
+    >
       <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
         <Link href="/">
           <a className="flex items-center gap-2">
-            <img src={logo} alt="Mosaic Logo" className="h-10 w-auto object-contain" />
+            <img 
+              src={logo} 
+              alt="Mosaic Logo" 
+              className={cn(
+                "h-10 w-auto object-contain transition-all filter",
+                isTransparent && "brightness-0 invert drop-shadow-md"
+              )} 
+            />
           </a>
         </Link>
 
@@ -34,8 +60,8 @@ export default function Navbar() {
                 className={cn(
                   "text-sm font-medium transition-colors hover:text-mosaic-blue",
                   location === link.href
-                    ? "text-primary font-semibold"
-                    : "text-muted-foreground"
+                    ? (isTransparent ? "text-white font-bold" : "text-primary font-bold")
+                    : (isTransparent ? "text-white/90 hover:text-white" : "text-muted-foreground")
                 )}
               >
                 {link.label}
@@ -46,7 +72,10 @@ export default function Navbar() {
 
         {/* Mobile Nav Toggle */}
         <button
-          className="md:hidden p-2 text-foreground"
+          className={cn(
+            "md:hidden p-2",
+            isTransparent ? "text-white" : "text-foreground"
+          )}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
@@ -55,7 +84,7 @@ export default function Navbar() {
 
       {/* Mobile Nav Menu */}
       {isOpen && (
-        <div className="md:hidden border-t border-border bg-background absolute w-full left-0 top-20 shadow-lg py-4 px-4 flex flex-col gap-4">
+        <div className="md:hidden border-t border-border bg-background absolute w-full left-0 top-full shadow-lg py-4 px-4 flex flex-col gap-4">
           {links.map((link) => (
             <Link key={link.href} href={link.href}>
               <a

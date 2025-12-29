@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lucide-react";
-import heroImage from "@assets/generated_images/abstract_geometric_connections_illustration_for_mosaic_hero_section.png";
+import heroImage from "@assets/MosaicHero_1767024748577.png";
 import problemImage from "@assets/generated_images/abstract_illustration_of_digital_fragmentation_for_social_media_issues_section.png";
 
 export default function Home() {
@@ -13,48 +13,46 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative pt-20 pb-32 md:pt-32 md:pb-48 overflow-hidden">
-        {/* Background Mesh */}
-        <div className="absolute inset-0 bg-pattern-mesh opacity-[0.4] pointer-events-none" />
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+        {/* Background Image & Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src={heroImage} 
+            alt="Mosaic Ecosystem Landscape" 
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-primary/50 mix-blend-multiply" /> {/* Deep Blue Scrim */}
+          <div className="absolute inset-0 bg-black/20" /> {/* Extra darken for readability */}
+        </div>
         
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="max-w-xl">
-              <h1 className="text-5xl md:text-6xl lg:text-[64px] font-bold tracking-tight text-primary leading-[1.1] mb-6">
-                Mosaic
-              </h1>
-              <p className="text-2xl md:text-3xl text-muted-foreground font-light mb-8 leading-snug">
-                A Human-Centered Social Media Ecosystem
+        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center md:text-left pt-20">
+          <div className="max-w-3xl">
+            <h1 className="text-5xl md:text-6xl lg:text-[72px] font-bold tracking-tight text-white leading-[1.1] mb-6 drop-shadow-md">
+              Mosaic
+            </h1>
+            <p className="text-2xl md:text-3xl text-white/90 font-light mb-8 leading-snug drop-shadow-sm">
+              A Human-Centered Social Media Ecosystem
+            </p>
+            <div className="prose prose-xl text-white/90 mb-10 max-w-2xl drop-shadow-sm">
+              <p>
+                Social media was meant to help us connect. Instead, today's dominant platforms are built on incentives that undermine trust, weaken communities, and extract value from users and creators.
               </p>
-              <div className="prose prose-lg text-foreground/80 mb-10">
-                <p>
-                  Social media was meant to help us connect. Instead, today's dominant platforms are built on incentives that undermine trust, weaken communities, and extract value from users and creators.
-                </p>
-                <p>
-                  Mosaic is an effort to design an open, interoperable social media ecosystem that puts people, communities, and the public good first.
-                </p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/how-it-works">
-                  <a className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-primary-foreground font-semibold text-lg hover:bg-primary/90 transition-all hover:translate-y-[-1px] shadow-sm">
-                    Explore how it works
-                  </a>
-                </Link>
-                <button 
-                  onClick={scrollToGetInvolved}
-                  className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-primary text-primary font-semibold text-lg hover:bg-primary/5 transition-all"
-                >
-                  Get involved
-                </button>
-              </div>
+              <p>
+                Mosaic is an effort to design an open, interoperable social media ecosystem that puts people, communities, and the public good first.
+              </p>
             </div>
-            <div className="relative hidden md:block">
-              <div className="absolute inset-0 bg-gradient-to-tr from-background via-transparent to-transparent z-10" />
-              <img 
-                src={heroImage} 
-                alt="Abstract representation of connection" 
-                className="rounded-2xl shadow-2xl opacity-90 hover:opacity-100 transition-opacity duration-700"
-              />
+            <div className="flex flex-col sm:flex-row gap-4">
+              <Link href="/how-it-works">
+                <a className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-white text-primary font-bold text-lg hover:bg-white/90 transition-all shadow-lg hover:translate-y-[-1px]">
+                  Explore how it works
+                </a>
+              </Link>
+              <button 
+                onClick={scrollToGetInvolved}
+                className="inline-flex items-center justify-center px-8 py-4 rounded-xl border-2 border-white text-white font-semibold text-lg hover:bg-white/10 transition-all backdrop-blur-sm"
+              >
+                Get involved
+              </button>
             </div>
           </div>
         </div>
