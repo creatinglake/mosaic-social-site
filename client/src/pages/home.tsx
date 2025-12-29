@@ -122,20 +122,30 @@ export default function Home() {
       </section>
 
       {/* What is Mosaic Section */}
-      <section className="py-24 bg-secondary/10 border-y border-border/50">
-        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
-          <div className="bg-background rounded-2xl p-8 md:p-12 shadow-sm border border-border">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">What is Mosaic?</h2>
-            <div className="prose prose-lg text-foreground/80 space-y-4">
-              <p className="font-semibold text-xl text-primary/90">
-                Mosaic is not a new social media app.
-              </p>
-              <p>
-                It is an ecosystem design and implementation effort that connects independent technologies and services into a unified, human-centered alternative to Big Tech social media.
-              </p>
-              <p>
-                Rather than rebuilding everything from scratch, Mosaic integrates what already works—while addressing the gaps that have held previous efforts back, including coordination, governance, performance, and sustainability.
-              </p>
+      <section className="py-24 bg-transparent">
+        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
+          <div className="grid md:grid-cols-[1.15fr_0.85fr] gap-12 md:gap-16 items-center">
+            <div className="space-y-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">What is Mosaic?</h2>
+              <div className="prose prose-lg text-foreground/80 space-y-4">
+                <p className="font-semibold text-xl text-primary/90">
+                  Mosaic is not a new social media app.
+                </p>
+                <p>
+                  It is an ecosystem design and implementation effort that connects independent technologies and services into a unified, human-centered alternative to Big Tech social media.
+                </p>
+                <p>
+                  Rather than rebuilding everything from scratch, Mosaic integrates what already works—while addressing the gaps that have held previous efforts back, including coordination, governance, performance, and sustainability.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex justify-center md:justify-end" aria-hidden="true">
+              <img 
+                src="/assets/diagrams/mosaic-coherence-hex.svg" 
+                alt="Mosaic coherence diagram showing governance, protocols, web standards, performance, business models, and spaces connected through Mosaic"
+                className="w-full max-w-[420px] h-auto object-contain"
+              />
             </div>
           </div>
         </div>

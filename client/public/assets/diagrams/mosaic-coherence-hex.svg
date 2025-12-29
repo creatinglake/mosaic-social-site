@@ -1,0 +1,64 @@
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mosaic coherence diagram">
+  <defs>
+    <polygon id="hex" points="100,0 50,-86.6 -50,-86.6 -100,0 -50,86.6 50,86.6" />
+    <style>
+      text { font-family: Inter, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; font-size: 24px; fill: #FCFBF9; font-weight: 700; }
+      .center-text { fill: #545862; font-size: 32px; }
+      line { stroke: rgba(84,88,98,0.25); stroke-width: 2; }
+    </style>
+  </defs>
+
+  <g transform="translate(400, 350)">
+    <!-- connection lines -->
+    <line x1="0" y1="0" x2="220" y2="0" />
+    <line x1="0" y1="0" x2="110" y2="190.5" />
+    <line x1="0" y1="0" x2="-110" y2="190.5" />
+    <line x1="0" y1="0" x2="-220" y2="0" />
+    <line x1="0" y1="0" x2="-110" y2="-190.5" />
+    <line x1="0" y1="0" x2="110" y2="-190.5" />
+
+    <!-- top-left -->
+    <g transform="translate(-110, -190.5)">
+      <use xlink:href="#hex" href="#hex" fill="#84B5DD" />
+      <text y="-15">Web</text>
+      <text y="15">Standards</text>
+    </g>
+
+    <!-- top-right -->
+    <g transform="translate(110, -190.5)">
+      <use xlink:href="#hex" href="#hex" fill="#3A67A5" />
+      <text y="5">Governance</text>
+    </g>
+
+    <!-- right -->
+    <g transform="translate(220, 0)">
+      <use xlink:href="#hex" href="#hex" fill="#D04C3F" />
+      <text y="5">Protocols</text>
+    </g>
+
+    <!-- bottom-right -->
+    <g transform="translate(110, 190.5)">
+      <use xlink:href="#hex" href="#hex" fill="#F2B233" />
+      <text y="5">Performance</text>
+    </g>
+
+    <!-- bottom-left -->
+    <g transform="translate(-110, 190.5)">
+      <use xlink:href="#hex" href="#hex" fill="#7A1D26" />
+      <text y="-15">Business</text>
+      <text y="15">Models</text>
+    </g>
+
+    <!-- left -->
+    <g transform="translate(-220, 0)">
+      <use xlink:href="#hex" href="#hex" fill="#1E3F6B" />
+      <text y="5">Spaces</text>
+    </g>
+
+    <!-- center -->
+    <g>
+      <use xlink:href="#hex" href="#hex" fill="#FCFBF9" stroke="#545862" stroke-width="8" />
+      <text class="center-text" y="5">Mosaic</text>
+    </g>
+  </g>
+</svg>

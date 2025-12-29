@@ -1,0 +1,183 @@
+Update ONLY the “What is Mosaic?” section to a split layout (text left, diagram right) and add a reusable SVG diagram asset. Keep the site static (HTML + CSS only). No frameworks, no JS.
+
+GOALS
+1) Remove the current “box/card” styling around the “What is Mosaic?” section so it sits on the normal page background (#FCFBF9) with generous whitespace.
+2) Create a two-column layout on desktop:
+   - Left column: existing “What is Mosaic?” heading + current copy (unchanged).
+   - Right column: a clean hexagon cluster SVG diagram (Mosaic in center with 6 surrounding labels).
+3) On mobile: stack vertically (text first, diagram second), centered with comfortable spacing.
+4) Use Mosaic palette and typography per our style system. Ensure the diagram scales without distortion.
+
+ASSET / FILE SYSTEM
+- Create this file: `assets/diagrams/mosaic-coherence-hex.svg`
+- Reference it via <img> (do NOT inline it) so it’s easy to swap later.
+- IMPORTANT: Preserve SVG aspect ratio. Use viewBox + preserveAspectRatio.
+
+SVG DIAGRAM SPEC (minimal, modern, on-brand)
+- 7 hexagons total in a honeycomb cluster:
+  Center hex: “Mosaic”
+  Surrounding hex labels:
+    1. Governance
+    2. Protocols
+    3. Web Standards
+    4. Performance
+    5. Business Models
+    6. Spaces
+- Use restrained Mosaic palette:
+  Background: transparent
+  Center hex fill: #FCFBF9 with border #545862 (or #1E3F6B if better)
+  Surrounding hex fills: mix of #1E3F6B, #3A67A5, #84B5DD, #F2B233, #D04C3F, #7A1D26
+  Text on colored hexes: #FCFBF9
+  Center “Mosaic” text: #545862
+  Connection lines: subtle, e.g. rgba(84,88,98,0.25)
+- Add `preserveAspectRatio="xMidYMid meet"` and a correct viewBox.
+- Use Inter (fallback Arial) in the SVG. Keep it simple: bold labels, centered.
+- Ensure it renders crisp and proportionally when used as an <img>.
+
+IMPLEMENTATION: HTML (index.html)
+1) Locate the “What is Mosaic?” section.
+2) Remove any wrapper that makes it a boxed card (e.g., class names like card/panel/box). Replace with a simple section structure like:
+
+<section id="what-is-mosaic" class="section whatis">
+  <div class="container whatis__grid">
+    <div class="whatis__text">
+      <!-- KEEP THIS COPY UNCHANGED -->
+      <h2>What is Mosaic?</h2>
+      <p><strong>Mosaic is not a new social media app.</strong></p>
+      <p>It is an ecosystem design and implementation effort that connects independent technologies and services into a unified, human-centered alternative to Big Tech social media.</p>
+      <p>Rather than rebuilding everything from scratch, Mosaic integrates what already works—while addressing the gaps that have held previous efforts back, including coordination, governance, performance, and sustainability.</p>
+    </div>
+
+    <div class="whatis__diagram" aria-hidden="true">
+      <img class="diagram" src="assets/diagrams/mosaic-coherence-hex.svg" alt="Mosaic coherence diagram showing governance, protocols, web standards, performance, business models, and spaces connected through Mosaic">
+    </div>
+  </div>
+</section>
+
+(If the section already exists, adapt it rather than duplicating it. The key is: text left, diagram right.)
+
+IMPLEMENTATION: CSS (styles.css)
+Add styles to support the split layout and remove boxed styling:
+
+/* What is Mosaic split section */
+.whatis {
+  background: transparent;
+}
+
+.whatis__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 48px;
+  align-items: center;
+}
+
+/* Ensure the section is NOT boxed */
+.whatis, .whatis__text, .whatis__diagram {
+  border: none;
+  box-shadow: none;
+}
+
+/* Diagram sizing (prevents SVG distortion) */
+.whatis__diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatis__diagram .diagram {
+  width: min(420px, 100%);
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* Mobile stack */
+@media (max-width: 900px) {
+  .whatis__grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .whatis__diagram {
+    justify-content: flex-start;
+  }
+  .whatis__diagram .diagram {
+    width: min(520px, 100%);
+  }
+}
+
+Also: if there is a global rule that stretches images, ensure icons/diagrams don’t get distorted.
+If you have something like img { width: 100%; }, keep it but the .diagram rules above must override it.
+
+SVG CONTENT (create exactly this file)
+Create `assets/diagrams/mosaic-coherence-hex.svg` with this content (keep as a plain .svg file):
+
+<svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mosaic coherence diagram">
+  <defs>
+    <polygon id="hex" points="100,0 50,-86.6 -50,-86.6 -100,0 -50,86.6 50,86.6" />
+    <style>
+      text { font-family: Inter, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; font-size: 24px; fill: #FCFBF9; font-weight: 700; }
+      .center-text { fill: #545862; font-size: 32px; }
+      line { stroke: rgba(84,88,98,0.25); stroke-width: 2; }
+    </style>
+  </defs>
+
+  <g transform="translate(400, 350)">
+    <!-- connection lines -->
+    <line x1="0" y1="0" x2="220" y2="0" />
+    <line x1="0" y1="0" x2="110" y2="190.5" />
+    <line x1="0" y1="0" x2="-110" y2="190.5" />
+    <line x1="0" y1="0" x2="-220" y2="0" />
+    <line x1="0" y1="0" x2="-110" y2="-190.5" />
+    <line x1="0" y1="0" x2="110" y2="-190.5" />
+
+    <!-- top-left -->
+    <g transform="translate(-110, -190.5)">
+      <use xlink:href="#hex" href="#hex" fill="#84B5DD" />
+      <text y="-15">Web</text>
+      <text y="15">Standards</text>
+    </g>
+
+    <!-- top-right -->
+    <g transform="translate(110, -190.5)">
+      <use xlink:href="#hex" href="#hex" fill="#3A67A5" />
+      <text y="5">Governance</text>
+    </g>
+
+    <!-- right -->
+    <g transform="translate(220, 0)">
+      <use xlink:href="#hex" href="#hex" fill="#D04C3F" />
+      <text y="5">Protocols</text>
+    </g>
+
+    <!-- bottom-right -->
+    <g transform="translate(110, 190.5)">
+      <use xlink:href="#hex" href="#hex" fill="#F2B233" />
+      <text y="5">Performance</text>
+    </g>
+
+    <!-- bottom-left -->
+    <g transform="translate(-110, 190.5)">
+      <use xlink:href="#hex" href="#hex" fill="#7A1D26" />
+      <text y="-15">Business</text>
+      <text y="15">Models</text>
+    </g>
+
+    <!-- left -->
+    <g transform="translate(-220, 0)">
+      <use xlink:href="#hex" href="#hex" fill="#1E3F6B" />
+      <text y="5">Spaces</text>
+    </g>
+
+    <!-- center -->
+    <g>
+      <use xlink:href="#hex" href="#hex" fill="#FCFBF9" stroke="#545862" stroke-width="8" />
+      <text class="center-text" y="5">Mosaic</text>
+    </g>
+  </g>
+</svg>
+
+FINISH
+- Verify the “What is Mosaic?” section is no longer boxed.
+- Verify the diagram appears to the right on desktop and stacks below on mobile.
+- Verify the SVG does not distort and remains crisp.
+After implementing these changes, stop.
