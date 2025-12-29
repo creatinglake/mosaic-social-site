@@ -165,45 +165,45 @@ export default function Home() {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
             {/* Element 1 */}
-            <div className="flex flex-col items-center text-center p-6">
-              <div className="w-16 h-16 rounded-2xl bg-mosaic-gold/20 flex items-center justify-center mb-6 text-mosaic-gold">
-                <Users size={32} />
+            <div className="flex flex-col items-center text-center p-6 group">
+              <div className="mb-6 text-mosaic-gold transform group-hover:scale-110 transition-transform duration-300">
+                <Users size={64} strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">People</h3>
-              <p className="text-primary-foreground/70">
+              <p className="text-primary-foreground/70 leading-relaxed">
                 Each person has a portable, user-controlled digital identity that works across the ecosystem and is not owned by any single company.
               </p>
             </div>
 
             {/* Element 2 */}
-            <div className="flex flex-col items-center text-center p-6">
-              <div className="w-16 h-16 rounded-2xl bg-mosaic-gold/20 flex items-center justify-center mb-6 text-mosaic-gold">
-                <Database size={32} />
+            <div className="flex flex-col items-center text-center p-6 group">
+              <div className="mb-6 text-mosaic-gold transform group-hover:scale-110 transition-transform duration-300">
+                <Database size={64} strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Personal data</h3>
-              <p className="text-primary-foreground/70">
+              <p className="text-primary-foreground/70 leading-relaxed">
                 Your data lives in a personal data store you control, rather than being locked inside a platform's database.
               </p>
             </div>
 
             {/* Element 3 */}
-            <div className="flex flex-col items-center text-center p-6">
-              <div className="w-16 h-16 rounded-2xl bg-mosaic-gold/20 flex items-center justify-center mb-6 text-mosaic-gold">
-                <LayoutGrid size={32} />
+            <div className="flex flex-col items-center text-center p-6 group">
+              <div className="mb-6 text-mosaic-gold transform group-hover:scale-110 transition-transform duration-300">
+                <LayoutGrid size={64} strokeWidth={1.5} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Spaces</h3>
-              <p className="text-primary-foreground/70">
+              <p className="text-primary-foreground/70 leading-relaxed">
                 Social interaction happens inside independent Spaces—communities, publications, creator hubs, civic groups, or private circles.
               </p>
             </div>
 
             {/* Element 4 */}
-            <div className="flex flex-col items-center text-center p-6">
-              <div className="w-16 h-16 rounded-2xl bg-mosaic-gold/20 flex items-center justify-center mb-6 text-mosaic-gold">
-                <Radio size={32} />
+            <div className="flex flex-col items-center text-center p-6 group">
+              <div className="mb-6 text-mosaic-gold transform group-hover:scale-110 transition-transform duration-300 flex items-center justify-center h-[64px] w-[64px]">
+                 <img src="/assets/icons/river-flow.svg" alt="River Flow" className="w-16 h-16 text-mosaic-gold" style={{ filter: 'brightness(0) saturate(100%) invert(77%) sepia(26%) saturate(1478%) hue-rotate(359deg) brightness(101%) contrast(106%)' }} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">The River</h3>
-              <p className="text-primary-foreground/70">
+              <p className="text-primary-foreground/70 leading-relaxed">
                 Updates from the Spaces you follow flow into a unified, customizable feed—filtered using methods and algorithms you choose.
               </p>
             </div>
