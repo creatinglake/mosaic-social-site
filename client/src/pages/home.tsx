@@ -63,11 +63,19 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
              <div className="order-2 md:order-1 relative flex justify-center">
                 <div className="absolute inset-0 bg-[#360505]/5 rounded-full blur-3xl opacity-50" />
-                <img 
-                  src={problemImage} 
-                  alt="Broken capitol building illustration" 
-                  className="relative z-10 w-full max-w-sm drop-shadow-sm hover:scale-105 transition-all duration-500"
-                  style={{ filter: 'brightness(0) saturate(100%) invert(9%) sepia(91%) saturate(6551%) hue-rotate(358deg) brightness(45%) contrast(114%)' }}
+                <div 
+                  className="relative z-10 w-full max-w-sm drop-shadow-sm hover:scale-105 transition-all duration-500 bg-[#360505]"
+                  style={{ 
+                    maskImage: `url(${problemImage})`,
+                    WebkitMaskImage: `url(${problemImage})`,
+                    maskSize: 'contain',
+                    WebkitMaskSize: 'contain',
+                    maskRepeat: 'no-repeat',
+                    WebkitMaskRepeat: 'no-repeat',
+                    maskPosition: 'center',
+                    WebkitMaskPosition: 'center',
+                    aspectRatio: '1224/1189'
+                  }}
                 />
              </div>
              <div className="order-1 md:order-2">
