@@ -1,0 +1,47 @@
+Create a simple but visually refined system diagram to illustrate Mosaic’s role in creating coherence across a decentralized social media ecosystem.
+
+Visual reference: Use the attached hexagon image as a loose structural reference (a central hexagon with six surrounding hexagons), but feel free to interpret it creatively rather than copying it exactly.
+
+Design guidance
+	•	Seven hexagons total, arranged in a cohesive cluster
+	•	One central hexagon labeled “Mosaic”
+	•	Six surrounding hexagons representing key ecosystem domains
+	•	Clean, modern, diagrammatic style (not illustrative or realistic)
+	•	Gradients are allowed and encouraged if they remain subtle and tasteful
+	•	Use the Mosaic color palette (blues, gold/yellow, burgundy, red) to create visual differentiation
+	•	Soft depth, gentle gradients, or light shading are acceptable
+	•	White or very light background preferred
+
+Hexagon labels
+	•	Center: Mosaic
+	•	Surrounding hexagons:
+	•	Governance
+	•	Protocols
+	•	Web Standards
+	•	Performance
+	•	Business Models
+	•	Spaces (or Community Spaces, if that reads more clearly)
+
+Conceptual intent
+	•	Mosaic sits at the center as the connective architecture
+	•	The surrounding domains remain independent but interoperable
+	•	The diagram should communicate integration without centralization
+	•	Avoid framing Mosaic as a platform or monolith
+
+Accompanying copy (place near the diagram)
+
+Headline:
+What’s been missing is coherence.
+
+Body copy:
+Many of the core building blocks already exist—governance frameworks, open protocols, web standards, scalable infrastructure, sustainable business models, and independent social spaces.
+
+Mosaic connects these elements into a unified, decentralized, and performant social media ecosystem—one capable of operating at scale and competing with Big Tech platforms without sacrificing human agency or the public good.
+
+Implementation constraints
+	•	Static site only (HTML + CSS)
+	•	SVG, CSS shapes, or a combination are all acceptable
+	•	No JavaScript frameworks required
+	•	Focus on clarity and visual elegance over complexity
+
+Implement this section and stop.
