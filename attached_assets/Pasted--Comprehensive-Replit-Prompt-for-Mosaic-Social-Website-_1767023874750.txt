@@ -1,0 +1,410 @@
+# Comprehensive Replit Prompt for Mosaic Social Website
+
+Create a static website for Mosaic, a human-centered social media ecosystem initiative. Build this as a multi-page HTML/CSS site with no JavaScript or frameworks.
+
+## Core Requirements
+
+**Technology:** Static HTML5 + CSS only. No JavaScript, no frameworks, no build tools.
+
+**Logo:** Use the Mosaic logo image file that I'm including with this prompt. Place it in the navigation header on all pages. The logo should link to the homepage (index.html).
+
+**Pages to create:**
+1. index.html (Homepage)
+2. how-it-works.html
+3. use-cases.html
+4. ecosystem-design.html
+5. roadmap.html
+6. contact.html
+
+All pages must share a common header (navbar) and footer.
+
+## Complete Design System
+
+### Design Goals
+- Warm, minimal, modern aesthetic with generous whitespace
+- Human-centered and trustworthy; visionary but grounded
+- Artful but subtle: gentle geometry and texture as low-opacity background accents
+- Avoid glossy startup vibes, neon colors, heavy shadows, or visual noise
+
+### Layout Principles
+
+**Core Layout Philosophy:**
+- Prefer open sections with clear hierarchy over card/tile-heavy layouts
+- Use a layered layout model rather than boxing the entire page
+- Full-bleed sections are encouraged for hero areas, imagery, and visual bands
+- Text-heavy content should live in readable containers
+
+**Reading Width Guidance:**
+- Recommended comfortable reading width for long-form text: ~1100–1200px
+- This is a guideline for text blocks only, not a limit on backgrounds or layouts
+
+**Vertical Rhythm:**
+- Maintain consistent vertical rhythm throughout
+- Section padding: 72–120px desktop, 48–72px mobile
+- One strong visual moment per screen (hero, band section, or diagram)
+- Use occasional deep-blue band sections for contrast (e.g., How It Works, Get Involved)
+
+### Complete Color Palette
+
+**Base Colors:**
+- Mosaic Modern White (background): #FCFBF9
+- Deep Charcoal (body text): #545862
+
+**Blues:**
+- Mosaic Light Blue: #84B5DD
+- Mosaic Blue: #3A67A5
+- Mosaic Deep Blue: #1E3F6B
+
+**Warm Accents:**
+- Mosaic Sunny Gold (updated): #F2B233
+- Mosaic Red (rare): #D04C3F
+- Mosaic Burgundy (very rare): #7A1D26
+
+**Usage Rules:**
+- Default background is Mosaic Modern White (#FCFBF9)
+- Deep Blue (#1E3F6B) for headings, nav emphasis, and primary buttons
+- Sunny Gold (#F2B233) is an accent only (icons, highlights, key words)
+- **Never make the interface feel gold-dominant**
+
+### Typography System
+
+**Fonts (Google Fonts):**
+- Headings: Inter (SemiBold / Bold)
+- Body: Source Sans 3 (preferred) or Nunito Sans as fallback
+
+**Scale & Readability:**
+- Body: 18px desktop, 16–17px mobile
+- Line height: 1.6–1.75
+- H1: ~52–64px desktop, ~36–44px mobile
+- H2: ~34–44px desktop
+- H3: ~22–26px
+- Short paragraphs and generous spacing
+
+### Buttons & Links
+
+**Primary Button:**
+- Background: Mosaic Deep Blue #1E3F6B
+- Text: Mosaic Modern White #FCFBF9
+- Rounded corners (10–14px)
+- Very subtle shadow only if needed
+
+**Secondary Button:**
+- Outline or translucent style
+- On dark backgrounds: white outline/text
+- On light backgrounds: deep-blue outline/text
+
+**Links:**
+- Default: Deep Blue (#1E3F6B)
+- Hover: Mosaic Blue (#3A67A5)
+- Subtle underline on hover or persistent underline
+
+### Iconography
+
+**Icon Style:**
+- Simple outline icons with consistent stroke weight
+- Default color: Deep Blue (#1E3F6B) or Charcoal (#545862)
+- Accent color: Sunny Gold (#F2B233) used sparingly
+- On deep-blue sections: Modern White icons/text with optional gold accents
+- Avoid emoji-style or overly detailed icons
+
+### Background Accents & Geometry
+
+**Goal:** Add visual interest without clutter
+
+**Core Rules:**
+- Use at most one pattern per section
+- Opacity range: 4–10%
+- Place accents in corners or along edges, never tiled across entire page
+
+**Primary Patterns:**
+- Soft Voronoi / cellular geometry
+- Thin Delaunay / triangulation mesh
+
+**Accent Patterns (rare):**
+- Flow ribbons (thin curves for storytelling sections)
+
+**Supporting Patterns (minimal):**
+- Organic contour lines
+- Concentric ripples
+- Light network geometry
+
+**Implementation Guidance:**
+- Prefer CSS gradients and SVG overlays
+- Hero images should always use a readable scrim overlay
+
+### Section Rhythm
+
+Alternate between:
+- Plain Modern White sections
+- Modern White + subtle watermark geometry
+- Deep Blue band section (sparingly)
+- Optional very light blue-tinted band (extremely subtle)
+
+### Voice & Tone
+
+**Content Guidelines:**
+- Warm, thoughtful, civic-minded
+- Clear and systems-oriented
+- Avoid hype, jargon, and "disruption" language
+- Emphasize agency, interoperability, communities, governance, and public good
+
+### What to Avoid
+
+**Absolutely Do Not Use:**
+- Card/tile overload
+- Busy or tiled backgrounds
+- Neon gradients or glow effects
+- Heavy shadows
+- Generic tech stock photography
+- Making all icons or accents gold
+
+## Navigation Structure
+
+### Global Navbar (appears on all pages)
+
+Order matters and reflects left-to-right navigation:
+1. Home (index.html)
+2. How It Works (how-it-works.html)
+3. Use Cases (use-cases.html)
+4. Ecosystem Design (ecosystem-design.html)
+5. Roadmap (roadmap.html)
+6. Contact (contact.html)
+
+### Global Call-to-Action Patterns
+- "Explore how it works" → links to how-it-works.html
+- "Get involved" → anchor link to #get-involved on homepage
+- Email contact: contact@mosaic.social
+
+### Footer (optional for initial version)
+- Contact
+- Email link
+- Optional copyright or attribution
+
+## Complete Homepage Content (index.html)
+
+Implement these sections in exact order with all content verbatim.
+
+**Visual Content Note:** Include placeholder images or illustrations for key sections to enhance the visual storytelling. Generate relevant images or illustrations that align with the warm, minimal aesthetic. Suggestions:
+- Hero section: An abstract illustration representing connection and ecosystem
+- "How Mosaic works" section: Icons or simple illustrations for each of the four elements (People, Personal data, Spaces, The River)
+- "Social media is failing society": Optional supporting visual
+- Consider other sections that would benefit from visual accompaniment
+
+All images should follow the design system: minimal, geometric, using the color palette, and never overwhelming the content.
+
+### Hero / Vision Section
+**Heading:** "Mosaic"
+
+**Subheading:** "A Human-Centered Social Media Ecosystem"
+
+**Body Text:**
+"Social media was meant to help us connect. Instead, today's dominant platforms are built on incentives that undermine trust, weaken communities, and extract value from users and creators.
+
+Mosaic is an effort to design an open, interoperable social media ecosystem that puts people, communities, and the public good first."
+
+**CTAs:**
+- "Explore how it works" (button linking to how-it-works.html)
+- "Get involved" (button linking to #get-involved anchor)
+
+### Section: Social media is failing society
+
+**Heading:** "Social media is failing society"
+
+**Body:**
+"The problem with today's social media isn't just content or moderation—it's structural.
+
+Most platforms are optimized for advertising and engagement above all else. Opaque algorithms amplify conflict and polarization. Personal data is harvested and monetized. Creators and communities are locked into systems they don't control.
+
+The result is a digital environment that distorts public discourse, erodes trust, and weakens civil liberties in the digital age."
+
+### Section: It doesn't have to be this way
+
+**Heading:** "It doesn't have to be this way"
+
+**Body:**
+"A healthier social media ecosystem is possible.
+
+Many of the core building blocks already exist: decentralized identity, personal data stores, open social protocols, and community-based platforms. What's missing is coherence—a way to connect these pieces into something people can actually use at scale.
+
+Mosaic's role is to provide that missing connective tissue."
+
+### Section: What is Mosaic?
+
+**Heading:** "What is Mosaic?"
+
+**Body:**
+"Mosaic is not a new social media app.
+
+It is an ecosystem design and implementation effort that connects independent technologies and services into a unified, human-centered alternative to Big Tech social media.
+
+Rather than rebuilding everything from scratch, Mosaic integrates what already works—while addressing the gaps that have held previous efforts back, including coordination, governance, performance, and sustainability."
+
+### Section: How Mosaic works
+
+**Heading:** "How Mosaic works"
+
+**Intro Text:**
+"Mosaic brings together four foundational elements into a coherent system:"
+
+**Four Elements (each with an icon):**
+
+1. **People**
+   "Each person has a portable, user-controlled digital identity that works across the ecosystem and is not owned by any single company."
+
+2. **Personal data**
+   "Your data lives in a personal data store you control, rather than being locked inside a platform's database."
+
+3. **Spaces**
+   "Social interaction happens inside independent Spaces—communities, publications, creator hubs, civic groups, or private circles. Each Space defines its own rules, tools, governance, and business model."
+
+4. **The River**
+   "Updates from the Spaces you follow flow into a unified, customizable feed—filtered using methods and algorithms you choose."
+
+**Closing Text:**
+"Together, these elements form an open social ecosystem that restores choice, agency, and accountability."
+
+**CTA Link:** "Explore the full architecture" (links to how-it-works.html)
+
+### Section: Who Mosaic is for
+
+**Heading:** "Who Mosaic is for"
+
+**Four Audience Groups:**
+- Creators who want direct relationships with their audiences
+- Communities that need autonomy and context-aware governance
+- Individuals who want healthier, more intentional information diets
+- Civic and public-interest groups seeking trustworthy digital spaces
+
+### Section: A collaborative design process
+
+**Heading:** "A collaborative design process"
+
+**Body:**
+"The social media problem spans technology, governance, economics, mental health, and democracy. No single person or organization can solve it alone.
+
+Mosaic's next step is a collaborative ecosystem design process—bringing together technologists, social scientists, creators, service providers, and funders to define the standards, governance, and architecture for a new social media commons."
+
+### Section: Get involved (id="get-involved")
+
+**Visual Treatment:** Deep Blue band section with white text
+
+**Heading:** "Get involved"
+
+**Body:**
+"If this vision resonates with you, we'd love to hear from you.
+
+We're looking for collaborators, partners, advisors, and funders who are interested in helping shape a healthier social web."
+
+**Contact:** 
+Email link to contact@mosaic.social
+
+## Other Pages - Detailed Structure
+
+### how-it-works.html
+
+**Purpose:** Explain Mosaic's core architecture and concepts in more detail.
+
+**Content Focus:**
+- Overview of the ecosystem
+- People, Personal Data, Spaces, The River
+- How these pieces interact
+
+**Implementation:** Create a full page with navigation, page heading "How It Works", and placeholder content explaining that this page will provide detailed information about Mosaic's architecture. Maintain all style system guidelines.
+
+### use-cases.html
+
+**Purpose:** Show how Mosaic applies in real-world contexts.
+
+**Content Focus:**
+- Creators & publications
+- Communities & groups
+- Civic & public-interest spaces
+- Individuals & healthier information diets
+
+**Implementation:** Create a full page with navigation, page heading "Use Cases", and placeholder sections for each of the four use case categories. Maintain all style system guidelines.
+
+### ecosystem-design.html
+
+**Purpose:** Describe Mosaic as a collaborative design and coordination effort.
+
+**Content Focus:**
+- Design principles
+- Governance and incentives
+- Interoperability and standards
+- Role of partners and contributors
+
+**Implementation:** Create a full page with navigation, page heading "Ecosystem Design", and placeholder content describing Mosaic's collaborative approach. Maintain all style system guidelines.
+
+### roadmap.html
+
+**Purpose:** Communicate current status and future direction.
+
+**Content Focus:**
+- Near-term goals
+- Medium-term milestones
+- Long-term vision
+
+**Implementation:** Create a full page with navigation, page heading "Roadmap", and placeholder sections for near-term, medium-term, and long-term phases. Maintain all style system guidelines.
+
+### contact.html
+
+**Purpose:** Make it easy to reach the Mosaic team and express interest.
+
+**Content Focus:**
+- Short invitation
+- Email link (primary): contact@mosaic.social
+- Optional simple contact form later (not required for static v1)
+
+**Implementation:** Create a full page with navigation, page heading "Contact", welcoming text, and prominent email link. Maintain all style system guidelines.
+
+## Responsive Design Requirements
+
+**Mobile-First Approach:**
+- Start with mobile layout, then enhance for desktop
+- Adjust typography sizes for mobile as specified in typography system
+- Adjust section padding for mobile (48–72px vs 72–120px desktop)
+- Ensure navigation works on mobile (consider simple vertical stack or collapsible menu)
+- Maintain readability at all screen sizes
+- Test at common breakpoints: 320px, 768px, 1024px, 1440px
+
+**Key Mobile Adjustments:**
+- H1: 36–44px (vs 52–64px desktop)
+- Body: 16–17px (vs 18px desktop)
+- Section padding: 48–72px (vs 72–120px desktop)
+- Navigation may stack vertically
+- Buttons should be easily tappable (minimum 44px height)
+
+## Additional Implementation Notes
+
+**This is a static marketing/explainer website, not a web application.**
+
+**Sitemap reflects the intended initial structure.** Additional pages can be added later, but implement these six pages first.
+
+**All pages share:**
+- Common header with global navbar
+- Common footer
+- Consistent color palette and typography
+- Same design principles and visual language
+
+**Priority:** The homepage (index.html) should be fully implemented with all sections and content. Other pages can be well-structured placeholders that maintain the design system.
+
+## Final Design Checklist
+
+Before considering the site complete, verify:
+- ✓ Background is Mosaic Modern White (#FCFBF9) throughout
+- ✓ No card/tile overload - open sections with clear hierarchy
+- ✓ Generous whitespace and vertical rhythm
+- ✓ Sunny Gold used sparingly as accent only, never dominant
+- ✓ Deep Blue band sections used sparingly (Get Involved section minimum)
+- ✓ Geometric accents at 4-10% opacity, corners/edges only
+- ✓ Simple outline icons, not emoji-style
+- ✓ Typography follows scale exactly (Inter for headings, Source Sans 3 for body)
+- ✓ Buttons follow specified styles (primary Deep Blue, secondary outline)
+- ✓ Links are Deep Blue with Mosaic Blue hover
+- ✓ No heavy shadows, neon gradients, or glossy effects
+- ✓ Tone is warm, civic-minded, and avoids hype/jargon
+- ✓ Mobile responsive with adjusted typography and padding
+- ✓ All homepage content implemented verbatim
+- ✓ Navigation works across all six pages
+
+Create a polished, professional site that feels warm, trustworthy, and visionary but grounded. The design should feel artful but subtle, with generous whitespace and clear hierarchy that puts the content and message first.
