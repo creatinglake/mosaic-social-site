@@ -3,8 +3,8 @@ from PIL import Image
 import os
 
 input_path = "attached_assets/generated_images/cracked_column_final.png"
-output_path = "attached_assets/generated_images/cracked_column_recolored.png"
-target_hex = "#230505"
+output_path = "attached_assets/generated_images/cracked_column_burgundy.png"
+target_hex = "#7A1D26"
 
 def hex_to_rgb(hex_color):
     hex_color = hex_color.lstrip('#')
