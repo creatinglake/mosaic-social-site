@@ -4,7 +4,7 @@ import os
 
 input_path = "attached_assets/generated_images/cracked_column_final.png"
 output_path = "attached_assets/generated_images/cracked_column_burgundy.png"
-target_hex = "#7A1D26"
+target_hex = "#5E161C"
 
 def hex_to_rgb(hex_color):
     hex_color = hex_color.lstrip('#')
