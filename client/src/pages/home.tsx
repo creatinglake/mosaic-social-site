@@ -21,16 +21,16 @@ export default function Home() {
             alt="Mosaic Ecosystem Landscape" 
             className="w-full h-full object-cover"
           />
-          {/* Gradient Overlay: White top for logo, Dark bottom for text */}
-          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-black/40 to-black/70" />
+          {/* Gradient Overlay: White top for logo, Darker bottom for text contrast */}
+          <div className="absolute inset-0 bg-gradient-to-b from-white/90 via-black/60 to-black/90" />
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center md:text-left pt-20">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-5xl lg:text-[64px] font-bold tracking-tight text-white leading-[1.1] mb-8 drop-shadow-md">
+          <div className="max-w-5xl">
+            <h1 className="text-4xl md:text-5xl lg:text-[72px] font-bold tracking-tight text-white leading-[1.1] mb-8 drop-shadow-lg">
               A Human-Centered Social Media Ecosystem
             </h1>
-            <div className="prose prose-2xl text-white/90 mb-12 max-w-3xl drop-shadow-sm leading-relaxed">
+            <div className="text-xl md:text-2xl lg:text-[28px] text-white/95 mb-12 max-w-4xl drop-shadow-md leading-relaxed font-light space-y-6">
               <p>
                 Social media was meant to help us connect. Instead, today's dominant platforms are built on incentives that undermine trust, weaken communities, and extract value from users and creators.
               </p>
