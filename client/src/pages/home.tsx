@@ -26,11 +26,11 @@ export default function Home() {
         </div>
         
         <div className="container mx-auto px-4 md:px-6 relative z-10 text-center md:text-left pt-20">
-          <div className="max-w-5xl">
-            <h1 className="text-4xl md:text-5xl lg:text-[72px] font-bold tracking-tight text-white leading-[1.1] mb-8 drop-shadow-lg">
+          <div className="max-w-3xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.1] mb-6 drop-shadow-lg">
               A Human-Centered Social Media Ecosystem
             </h1>
-            <div className="text-xl md:text-2xl lg:text-[28px] text-white/95 mb-12 max-w-4xl drop-shadow-md leading-relaxed font-light space-y-6">
+            <div className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl drop-shadow-md leading-relaxed font-medium space-y-4">
               <p>
                 Social media was meant to help us connect. Instead, today's dominant platforms are built on incentives that undermine trust, weaken communities, and extract value from users and creators.
               </p>
@@ -38,7 +38,7 @@ export default function Home() {
                 Mosaic is an effort to design an open, interoperable social media ecosystem that puts people, communities, and the public good first.
               </p>
             </div>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Link href="/how-it-works">
                 <a className="inline-flex items-center justify-center px-10 py-5 rounded-xl bg-white text-primary font-bold text-xl hover:bg-white/90 transition-all shadow-lg hover:translate-y-[-1px]">
                   Explore how it works
