@@ -1,63 +1,65 @@
 <svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mosaic coherence diagram">
   <defs>
-    <path id="hex" d="M 95.67,-7.50 Q 100.00,0.00 95.67,7.50 L 54.33,79.10 Q 50.00,86.60 41.34,86.60 L -41.34,86.60 Q -50.00,86.60 -54.33,79.10 L -95.67,7.50 Q -100.00,0.00 -95.67,-7.50 L -54.33,-79.10 Q -50.00,-86.60 -41.34,-86.60 L 41.34,-86.60 Q 50.00,-86.60 54.33,-79.10 Z" />
+    <!-- R=85, Corner=10 -->
+    <path id="hex" d="M 82.11,-5.00 Q 85.00,0.00 82.11,5.00 L 45.39,68.61 Q 42.50,73.61 36.73,73.61 L -36.73,73.61 Q -42.50,73.61 -45.39,68.61 L -82.11,5.00 Q -85.00,0.00 -82.11,-5.00 L -45.39,-68.61 Q -42.50,-73.61 -36.73,-73.61 L 36.73,-73.61 Q 42.50,-73.61 45.39,-68.61 Z" />
     <style>
-      text { font-family: Inter, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; font-size: 24px; fill: #FCFBF9; font-weight: 700; }
-      .center-text { fill: #545862; font-size: 32px; }
-      line { stroke: rgba(84,88,98,0.25); stroke-width: 2; }
+      text { font-family: Inter, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; font-size: 20px; fill: #FCFBF9; font-weight: 700; pointer-events: none; }
+      .center-text { fill: #FCFBF9; font-size: 28px; }
+      .dark-text { fill: #1E3F6B; }
+      line { stroke: rgba(84,88,98,0.15); stroke-width: 1.5; }
     </style>
   </defs>
 
   <g transform="translate(400, 350)">
-    <!-- connection lines -->
-    <line x1="0" y1="0" x2="220" y2="0" />
-    <line x1="0" y1="0" x2="110" y2="190.5" />
-    <line x1="0" y1="0" x2="-110" y2="190.5" />
-    <line x1="0" y1="0" x2="-220" y2="0" />
-    <line x1="0" y1="0" x2="-110" y2="-190.5" />
-    <line x1="0" y1="0" x2="110" y2="-190.5" />
+    <!-- connection lines (faint) - adjusted to new layout -->
+    <line x1="0" y1="0" x2="0" y2="-170" />
+    <line x1="0" y1="0" x2="147" y2="-85" />
+    <line x1="0" y1="0" x2="147" y2="85" />
+    <line x1="0" y1="0" x2="0" y2="170" />
+    <line x1="0" y1="0" x2="-147" y2="85" />
+    <line x1="0" y1="0" x2="-147" y2="-85" />
 
-    <!-- top-left -->
-    <g transform="translate(-110, -190.5)">
+    <!-- Top: Light Blue #84B5DD -->
+    <g transform="translate(0, -170)">
       <use xlink:href="#hex" href="#hex" fill="#84B5DD" />
-      <text y="-15">Web</text>
-      <text y="15">Standards</text>
+      <text y="5" class="dark-text">Web Standards</text>
     </g>
 
-    <!-- top-right -->
-    <g transform="translate(110, -190.5)">
+    <!-- Top Right: Medium Blue #3A67A5 -->
+    <g transform="translate(147, -85)">
       <use xlink:href="#hex" href="#hex" fill="#3A67A5" />
       <text y="5">Governance</text>
     </g>
 
-    <!-- right -->
-    <g transform="translate(220, 0)">
-      <use xlink:href="#hex" href="#hex" fill="#D04C3F" />
+    <!-- Bottom Right: Burgundy #7A1D26 -->
+    <g transform="translate(147, 85)">
+      <use xlink:href="#hex" href="#hex" fill="#7A1D26" />
       <text y="5">Protocols</text>
     </g>
 
-    <!-- bottom-right -->
-    <g transform="translate(110, 190.5)">
-      <use xlink:href="#hex" href="#hex" fill="#F2B233" />
+    <!-- Bottom: Terra Cotta #D04C3F -->
+    <g transform="translate(0, 170)">
+      <use xlink:href="#hex" href="#hex" fill="#D04C3F" />
       <text y="5">Performance</text>
     </g>
 
-    <!-- bottom-left -->
-    <g transform="translate(-110, 190.5)">
-      <use xlink:href="#hex" href="#hex" fill="#7A1D26" />
-      <text y="-15">Business</text>
+    <!-- Bottom Left: Navy #1E3F6B -->
+    <g transform="translate(-147, 85)">
+      <use xlink:href="#hex" href="#hex" fill="#1E3F6B" />
+      <text y="-10">Business</text>
       <text y="15">Models</text>
     </g>
 
-    <!-- left -->
-    <g transform="translate(-220, 0)">
-      <use xlink:href="#hex" href="#hex" fill="#1E3F6B" />
-      <text y="5">Spaces</text>
+    <!-- Top Left: Gold #F2B233 -->
+    <g transform="translate(-147, -85)">
+      <use xlink:href="#hex" href="#hex" fill="#F2B233" />
+      <text y="5" class="dark-text">Spaces</text>
     </g>
 
-    <!-- center -->
+    <!-- Center: Dark Blue #2B4C7E (Slightly lighter than Navy for contrast? Or same) -->
+    <!-- Screenshot has Center Dark Blue #1E3F6B -->
     <g>
-      <use xlink:href="#hex" href="#hex" fill="#FCFBF9" stroke="#545862" stroke-width="8" />
+      <use xlink:href="#hex" href="#hex" fill="#1E3F6B" />
       <text class="center-text" y="5">Mosaic</text>
     </g>
   </g>
