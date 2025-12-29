@@ -1,6 +1,6 @@
 <svg viewBox="0 0 800 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Mosaic coherence diagram">
   <defs>
-    <polygon id="hex" points="100,0 50,-86.6 -50,-86.6 -100,0 -50,86.6 50,86.6" />
+    <path id="hex" d="M 95.67,-7.50 Q 100.00,0.00 95.67,7.50 L 54.33,79.10 Q 50.00,86.60 41.34,86.60 L -41.34,86.60 Q -50.00,86.60 -54.33,79.10 L -95.67,7.50 Q -100.00,0.00 -95.67,-7.50 L -54.33,-79.10 Q -50.00,-86.60 -41.34,-86.60 L 41.34,-86.60 Q 50.00,-86.60 54.33,-79.10 Z" />
     <style>
       text { font-family: Inter, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; font-size: 24px; fill: #FCFBF9; font-weight: 700; }
       .center-text { fill: #545862; font-size: 32px; }
