@@ -87,7 +87,7 @@ export default function Home() {
       </section>
 
       {/* Hope Section */}
-      <section className="relative py-40 flex items-center justify-center overflow-hidden">
+      <section className="relative pt-40 pb-20 flex items-center justify-center overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -113,7 +113,7 @@ export default function Home() {
               <p className="drop-shadow-sm">
                 Many of the core building blocks already exist: decentralized identity, personal data stores, open social protocols, and community-based platforms. What’s missing is coherence—an integrated way to align these pieces into a decentralized, high-performance social media ecosystem that people can use at scale.
               </p>
-              <p className="text-2xl pt-4 font-bold text-white drop-shadow-md border-t border-white/20 inline-block px-8">
+              <p className="text-2xl pt-8 font-bold text-white drop-shadow-md border-t border-white/20 inline-block px-8 mt-4">
                 Mosaic's role is to provide that missing connective tissue.
               </p>
             </div>
