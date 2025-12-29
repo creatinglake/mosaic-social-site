@@ -67,6 +67,7 @@ export default function Home() {
                   src={problemImage} 
                   alt="Broken capitol building illustration" 
                   className="relative z-10 w-full max-w-sm drop-shadow-sm hover:scale-105 transition-all duration-500"
+                  style={{ filter: 'brightness(0) saturate(100%) invert(13%) sepia(94%) saturate(7466%) hue-rotate(357deg) brightness(95%) contrast(114%)' }}
                 />
              </div>
              <div className="order-1 md:order-2">
