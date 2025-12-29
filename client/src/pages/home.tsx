@@ -111,7 +111,7 @@ export default function Home() {
             
             <div className="prose prose-xl mx-auto text-white/95 leading-relaxed font-medium">
               <p className="drop-shadow-sm">
-                Many of the core building blocks already exist: decentralized identity, personal data stores, open social protocols, and community-based platforms. What's missing is coherence—a way to connect these pieces into something people can actually use at scale.
+                Many of the core building blocks already exist: decentralized identity, personal data stores, open social protocols, and community-based platforms. What’s missing is coherence—an integrated way to align these pieces into a decentralized, high-performance social media ecosystem that people can use at scale.
               </p>
               <p className="text-2xl pt-4 font-bold text-white drop-shadow-md border-t border-white/20 inline-block px-8">
                 Mosaic's role is to provide that missing connective tissue.
