@@ -223,22 +223,38 @@ export default function Home() {
       </section>
 
       {/* Audience Section */}
-      <section className="py-24 bg-background">
+      <section className="py-24 bg-muted/10">
         <div className="container mx-auto px-4 md:px-6">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-primary">Who Mosaic is for</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-primary">Who Mosaic is for</h2>
           
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-             {[
-               "Creators who want direct relationships with their audiences",
-               "Communities that need autonomy and context-aware governance",
-               "Individuals who want healthier, more intentional information diets",
-               "Civic and public-interest groups seeking trustworthy digital spaces"
-             ].map((item, i) => (
-               <div key={i} className="flex items-start gap-4 p-6 rounded-xl border border-border bg-muted/20">
-                 <div className="mt-1 w-2 h-2 rounded-full bg-mosaic-gold shrink-0" />
-                 <p className="text-lg text-foreground/80 font-medium">{item}</p>
-               </div>
-             ))}
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+             <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+               <h3 className="text-2xl font-bold text-primary mb-4">Creators</h3>
+               <p className="text-lg text-foreground/80 leading-relaxed">
+                 who want direct, lasting relationships with their audiences—without platform middlemen deciding what gets seen or how you make money. Choose your own tools and business model. Your content, your identity, and your audience relationships belong to you.
+               </p>
+             </div>
+
+             <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+               <h3 className="text-2xl font-bold text-primary mb-4">Communities</h3>
+               <p className="text-lg text-foreground/80 leading-relaxed">
+                 that need autonomy and tools tailored to their purpose. Set your own norms, moderation, and features—no one-size-fits-all rules imposed from above. Stay independent while connecting to the broader network.
+               </p>
+             </div>
+
+             <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+               <h3 className="text-2xl font-bold text-primary mb-4">Individuals</h3>
+               <p className="text-lg text-foreground/80 leading-relaxed">
+                 seeking healthier, more intentional online spaces. Control what you see and how information reaches you. Choose which algorithms—or non-algorithmic filters—shape your experience. Built for individual sovereignty and well-being, not endless scrolling.
+               </p>
+             </div>
+
+             <div className="p-8 rounded-2xl bg-background border border-border shadow-sm hover:shadow-md transition-shadow">
+               <h3 className="text-2xl font-bold text-primary mb-4">Society and democracy</h3>
+               <p className="text-lg text-foreground/80 leading-relaxed">
+                 needs social infrastructure which is open, transparent, and accountable to the societies it shapes. Mosaic makes its structures auditable and its incentives explicit, enabling new forms of collective sensemaking that support a more resilient and participatory model of digital democracy.
+               </p>
+             </div>
           </div>
         </div>
       </section>
