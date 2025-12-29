@@ -3,15 +3,14 @@
     <!-- R=85, Corner=10 -->
     <path id="hex" d="M 82.11,-5.00 Q 85.00,0.00 82.11,5.00 L 45.39,68.61 Q 42.50,73.61 36.73,73.61 L -36.73,73.61 Q -42.50,73.61 -45.39,68.61 L -82.11,5.00 Q -85.00,0.00 -82.11,-5.00 L -45.39,-68.61 Q -42.50,-73.61 -36.73,-73.61 L 36.73,-73.61 Q 42.50,-73.61 45.39,-68.61 Z" />
     <style>
-      text { font-family: Inter, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; font-size: 20px; fill: #FCFBF9; font-weight: 700; pointer-events: none; }
-      .center-text { fill: #FCFBF9; font-size: 28px; }
-      .dark-text { fill: #1E3F6B; }
+      text { font-family: Inter, Arial, sans-serif; text-anchor: middle; dominant-baseline: middle; font-size: 20px; fill: #FFFFFF; font-weight: 700; pointer-events: none; }
+      .center-text { fill: #333333; font-size: 28px; }
       line { stroke: rgba(84,88,98,0.15); stroke-width: 1.5; }
     </style>
   </defs>
 
   <g transform="translate(400, 350)">
-    <!-- connection lines (faint) - adjusted to new layout -->
+    <!-- connection lines (faint) -->
     <line x1="0" y1="0" x2="0" y2="-170" />
     <line x1="0" y1="0" x2="147" y2="-85" />
     <line x1="0" y1="0" x2="147" y2="85" />
@@ -22,7 +21,7 @@
     <!-- Top: Light Blue #84B5DD -->
     <g transform="translate(0, -170)">
       <use xlink:href="#hex" href="#hex" fill="#84B5DD" />
-      <text y="5" class="dark-text">Web Standards</text>
+      <text y="5">Web Standards</text>
     </g>
 
     <!-- Top Right: Medium Blue #3A67A5 -->
@@ -53,13 +52,12 @@
     <!-- Top Left: Gold #F2B233 -->
     <g transform="translate(-147, -85)">
       <use xlink:href="#hex" href="#hex" fill="#F2B233" />
-      <text y="5" class="dark-text">Spaces</text>
+      <text y="5">Spaces</text>
     </g>
 
-    <!-- Center: Dark Blue #2B4C7E (Slightly lighter than Navy for contrast? Or same) -->
-    <!-- Screenshot has Center Dark Blue #1E3F6B -->
+    <!-- Center: Transparent with Charcoal Border -->
     <g>
-      <use xlink:href="#hex" href="#hex" fill="#1E3F6B" />
+      <use xlink:href="#hex" href="#hex" fill="transparent" stroke="#333333" stroke-width="4" />
       <text class="center-text" y="5">Mosaic</text>
     </g>
   </g>
