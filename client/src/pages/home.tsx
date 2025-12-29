@@ -1,6 +1,6 @@
 import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
-import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lucide-react";
+import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink, Palette, User, Landmark } from "lucide-react";
 import heroImage from "@assets/MosaicHero_1767024748577.png";
 import problemImage from "@assets/generated_images/cracked_column_large_saturated.png";
 import townSquareImage from "@assets/generated_images/sunny_town_square_with_diverse_community_gathering.png";
@@ -230,38 +230,66 @@ export default function Home() {
           <img 
             src={audienceImage} 
             alt="Abstract network background" 
-            className="w-full h-full object-cover opacity-40"
+            className="w-full h-full object-cover opacity-60"
           />
-          <div className="absolute inset-0 bg-background/60 backdrop-blur-[1px]" />
+          <div className="absolute inset-0 bg-background/50 backdrop-blur-[1px]" />
         </div>
 
         <div className="container mx-auto px-4 md:px-6 relative z-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-primary">Who Mosaic is for</h2>
           
           <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-             <div className="p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md transition-shadow">
-               <h3 className="text-2xl font-bold text-primary mb-4">Creators</h3>
+             {/* Creators Card */}
+             <div className="group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+               <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#F2B233]" />
+               <div className="flex items-start justify-between mb-4">
+                 <h3 className="text-2xl font-bold text-[#F2B233]">Creators</h3>
+                 <div className="p-2 rounded-lg bg-[#F2B233]/10 text-[#F2B233]">
+                   <Palette size={24} />
+                 </div>
+               </div>
                <p className="text-lg text-foreground/80 leading-relaxed">
                  who want direct, lasting relationships with their audiences—without platform middlemen deciding what gets seen or how you make money. Choose your own tools and business model. Your content, your identity, and your audience relationships belong to you.
                </p>
              </div>
 
-             <div className="p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md transition-shadow">
-               <h3 className="text-2xl font-bold text-primary mb-4">Communities</h3>
+             {/* Communities Card */}
+             <div className="group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+               <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#3A67A5]" />
+               <div className="flex items-start justify-between mb-4">
+                 <h3 className="text-2xl font-bold text-[#3A67A5]">Communities</h3>
+                 <div className="p-2 rounded-lg bg-[#3A67A5]/10 text-[#3A67A5]">
+                   <Users size={24} />
+                 </div>
+               </div>
                <p className="text-lg text-foreground/80 leading-relaxed">
                  that need autonomy and tools tailored to their purpose. Set your own norms, moderation, and features—no one-size-fits-all rules imposed from above. Stay independent while connecting to the broader network.
                </p>
              </div>
 
-             <div className="p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md transition-shadow">
-               <h3 className="text-2xl font-bold text-primary mb-4">Individuals</h3>
+             {/* Individuals Card */}
+             <div className="group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+               <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#D04C3F]" />
+               <div className="flex items-start justify-between mb-4">
+                 <h3 className="text-2xl font-bold text-[#D04C3F]">Individuals</h3>
+                 <div className="p-2 rounded-lg bg-[#D04C3F]/10 text-[#D04C3F]">
+                   <User size={24} />
+                 </div>
+               </div>
                <p className="text-lg text-foreground/80 leading-relaxed">
                  seeking healthier, more intentional online spaces. Control what you see and how information reaches you. Choose which algorithms—or non-algorithmic filters—shape your experience. Built for individual sovereignty and well-being, not endless scrolling.
                </p>
              </div>
 
-             <div className="p-8 rounded-2xl bg-white/80 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-md transition-shadow">
-               <h3 className="text-2xl font-bold text-primary mb-4">Society and democracy</h3>
+             {/* Society Card */}
+             <div className="group p-8 rounded-2xl bg-white/90 backdrop-blur-sm border border-border/50 shadow-sm hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
+               <div className="absolute left-0 top-0 bottom-0 w-1.5 bg-[#1E3F6B]" />
+               <div className="flex items-start justify-between mb-4">
+                 <h3 className="text-2xl font-bold text-[#1E3F6B]">Society and democracy</h3>
+                 <div className="p-2 rounded-lg bg-[#1E3F6B]/10 text-[#1E3F6B]">
+                   <Landmark size={24} />
+                 </div>
+               </div>
                <p className="text-lg text-foreground/80 leading-relaxed">
                  needs social infrastructure which is open, transparent, and accountable to the societies it shapes. Mosaic makes its structures auditable and its incentives explicit, enabling new forms of collective sensemaking that support a more resilient and participatory model of digital democracy.
                </p>
