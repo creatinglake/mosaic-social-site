@@ -135,7 +135,7 @@ export default function Home() {
                   It is an ecosystem design and implementation effort that connects independent technologies and services into a unified, human-centered alternative to Big Tech social media.
                 </p>
                 <p>
-                  Rather than rebuilding everything from scratch, Mosaic integrates what already works—while addressing the gaps that have held previous efforts back, including coordination, governance, performance, and sustainability.
+                  Rather than rebuilding everything from scratch, Mosaic integrates what already works—while addressing the gaps that have held previous efforts back, including coordination, governance, performance, and economic sustainability.
                 </p>
               </div>
             </div>
