@@ -41,12 +41,12 @@ export default function Navbar() {
       <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         <Link href="/">
           <a className="flex items-center gap-2 relative group">
-            <div className="absolute inset-0 bg-white/50 blur-xl rounded-full scale-[2.0] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-            <div className="absolute inset-0 bg-white/40 blur-2xl rounded-full scale-[1.75]" />
+            {/* Permanent, very slight background glow */}
+            <div className="absolute inset-0 bg-white/20 blur-2xl rounded-full scale-125 pointer-events-none" />
             <img 
               src={logo} 
               alt="Mosaic Logo" 
-              className="h-14 w-auto object-contain transition-all relative z-10" 
+              className="h-14 w-auto object-contain transition-all duration-300 relative z-10 group-hover:brightness-110" 
             />
           </a>
         </Link>
