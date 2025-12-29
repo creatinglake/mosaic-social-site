@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lucide-react";
 import heroImage from "@assets/MosaicHero_1767024748577.png";
-import problemImage from "@assets/generated_images/minimal_dark_red_ionic_column_icon_with_jagged_crack.png";
+import problemImage from "@assets/generated_images/clean_minimal_dark_red_ionic_column_icon_with_jagged_crack.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
@@ -60,15 +60,14 @@ export default function Home() {
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
              <div className="order-2 md:order-1 relative flex justify-center">
-                <div className="absolute inset-0 bg-[#7A1D26]/5 rounded-full blur-3xl opacity-50" />
                 <img 
                   src={problemImage} 
                   alt="Broken public forum column icon" 
-                  className="rounded-xl relative z-10 w-3/4 max-w-xs drop-shadow-sm hover:scale-105 transition-all duration-500 mix-blend-multiply"
+                  className="relative z-10 w-3/4 max-w-xs drop-shadow-sm hover:scale-105 transition-all duration-500 mix-blend-multiply"
                 />
              </div>
              <div className="order-1 md:order-2">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">Social media is failing society</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#7A1D26]">Social media is failing society</h2>
                 <div className="prose prose-lg text-foreground/80 space-y-6">
                   <p>
                     The problem with today's social media isn't just content or moderation—it's structural.
