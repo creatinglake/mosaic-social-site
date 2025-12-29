@@ -5,29 +5,6 @@ import heroImage from "@assets/MosaicHero_1767024748577.png";
 import problemImage from "@assets/generated_images/cracked_column_large_saturated.png";
 import townSquareImage from "@assets/generated_images/sunny_town_square_with_diverse_community_gathering.png";
 
-// Hexagon Component for the System Diagram
-const Hexagon = ({ x, y, size, color, label, delay = 0, fontSize = "text-sm" }: { x: number, y: number, size: number, color: string, label: React.ReactNode, delay?: number, fontSize?: string }) => {
-  const points = [];
-  for (let i = 0; i < 6; i++) {
-    const angle_deg = 60 * i - 30; // Pointy top
-    const angle_rad = Math.PI / 180 * angle_deg;
-    points.push(`${x + size * Math.cos(angle_rad)},${y + size * Math.sin(angle_rad)}`);
-  }
-
-  return (
-    <g className="animate-in fade-in zoom-in duration-700 fill-current" style={{ animationDelay: `${delay}ms`, transformOrigin: `${x}px ${y}px` }}>
-      <polygon points={points.join(" ")} fill={color} className="drop-shadow-lg hover:scale-105 transition-transform origin-center cursor-default opacity-90 hover:opacity-100" />
-      <foreignObject x={x - size} y={y - size} width={size * 2} height={size * 2} className="pointer-events-none">
-        <div className="w-full h-full flex items-center justify-center text-center p-1 leading-tight">
-           <span className={`text-white font-bold ${fontSize} drop-shadow-md select-none`}>
-             {label}
-           </span>
-        </div>
-      </foreignObject>
-    </g>
-  );
-};
-
 export default function Home() {
   const scrollToGetInvolved = () => {
     const element = document.getElementById('get-involved');
@@ -145,49 +122,20 @@ export default function Home() {
       </section>
 
       {/* What is Mosaic Section */}
-      <section className="py-24 bg-background">
-        <div className="container mx-auto px-4 md:px-6 max-w-6xl">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
-            {/* Copy Side */}
-            <div className="order-2 lg:order-1">
-              <h2 className="text-4xl md:text-5xl font-bold mb-8 text-primary leading-tight">
-                What’s been missing is coherence.
-              </h2>
-              <div className="prose prose-xl text-foreground/80 space-y-6">
-                <p>
-                  Many of the core building blocks already exist—governance frameworks, open protocols, web standards, scalable infrastructure, sustainable business models, and independent social spaces.
-                </p>
-                <p>
-                  Mosaic connects these elements into a unified, decentralized, and performant social media ecosystem—one capable of operating at scale and competing with Big Tech platforms without sacrificing human agency or the public good.
-                </p>
-              </div>
-            </div>
-            
-            {/* Diagram Side */}
-            <div className="order-1 lg:order-2 flex justify-center items-center py-8">
-               <svg width="450" height="420" viewBox="0 0 450 420" className="w-full max-w-[500px] h-auto overflow-visible select-none">
-                  {/* Center - Mosaic */}
-                  <Hexagon x={225} y={210} size={75} color="#F2B233" label={<span className="text-primary text-xl">Mosaic</span>} delay={0} fontSize="text-xl" />
-                  
-                  {/* Surrounding Ring - Radius approx 135 */}
-                  {/* Top - Governance */}
-                  <Hexagon x={225} y={75} size={65} color="#5E161C" label="Governance" delay={100} />
-                  
-                  {/* Top Right - Protocols */}
-                  <Hexagon x={342} y={142} size={65} color="#3A67A5" label="Protocols" delay={200} />
-                  
-                  {/* Bottom Right - Web Standards */}
-                  <Hexagon x={342} y={278} size={65} color="#5E161C" label={<>Web<br/>Standards</>} delay={300} />
-                  
-                  {/* Bottom - Performance */}
-                  <Hexagon x={225} y={345} size={65} color="#3A67A5" label="Performance" delay={400} />
-                  
-                  {/* Bottom Left - Business Models */}
-                  <Hexagon x={108} y={278} size={65} color="#5E161C" label={<>Business<br/>Models</>} delay={500} />
-                  
-                  {/* Top Left - Spaces */}
-                  <Hexagon x={108} y={142} size={65} color="#3A67A5" label="Spaces" delay={600} />
-               </svg>
+      <section className="py-24 bg-secondary/10 border-y border-border/50">
+        <div className="container mx-auto px-4 md:px-6 max-w-5xl">
+          <div className="bg-background rounded-2xl p-8 md:p-12 shadow-sm border border-border">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">What is Mosaic?</h2>
+            <div className="prose prose-lg text-foreground/80 space-y-4">
+              <p className="font-semibold text-xl text-primary/90">
+                Mosaic is not a new social media app.
+              </p>
+              <p>
+                It is an ecosystem design and implementation effort that connects independent technologies and services into a unified, human-centered alternative to Big Tech social media.
+              </p>
+              <p>
+                Rather than rebuilding everything from scratch, Mosaic integrates what already works—while addressing the gaps that have held previous efforts back, including coordination, governance, performance, and sustainability.
+              </p>
             </div>
           </div>
         </div>
