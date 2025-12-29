@@ -34,20 +34,17 @@ export default function Navbar() {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300",
         isTransparent 
-          ? "bg-transparent border-transparent py-2" 
-          : "bg-background/90 backdrop-blur-md border-b border-border shadow-sm py-0"
+          ? "bg-transparent py-4" 
+          : "bg-background/90 backdrop-blur-md border-b border-border shadow-sm py-2"
       )}
     >
-      <div className="container mx-auto px-4 md:px-6 h-20 flex items-center justify-between">
+      <div className="container mx-auto px-4 md:px-6 h-16 flex items-center justify-between">
         <Link href="/">
           <a className="flex items-center gap-2">
             <img 
               src={logo} 
               alt="Mosaic Logo" 
-              className={cn(
-                "h-10 w-auto object-contain transition-all filter",
-                isTransparent && "brightness-0 invert drop-shadow-md"
-              )} 
+              className="h-10 w-auto object-contain transition-all" 
             />
           </a>
         </Link>
@@ -58,10 +55,10 @@ export default function Navbar() {
             <Link key={link.href} href={link.href}>
               <a
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-mosaic-blue",
+                  "text-sm font-bold transition-colors hover:text-mosaic-blue",
                   location === link.href
-                    ? (isTransparent ? "text-white font-bold" : "text-primary font-bold")
-                    : (isTransparent ? "text-white/90 hover:text-white" : "text-muted-foreground")
+                    ? "text-primary"
+                    : "text-muted-foreground"
                 )}
               >
                 {link.label}
@@ -72,10 +69,7 @@ export default function Navbar() {
 
         {/* Mobile Nav Toggle */}
         <button
-          className={cn(
-            "md:hidden p-2",
-            isTransparent ? "text-white" : "text-foreground"
-          )}
+          className="md:hidden p-2 text-foreground"
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X /> : <Menu />}
