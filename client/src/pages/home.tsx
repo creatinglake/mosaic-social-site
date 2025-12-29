@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lucide-react";
 import heroImage from "@assets/MosaicHero_1767024748577.png";
-import problemImage from "@assets/generated_images/abstract_illustration_of_digital_fragmentation_for_social_media_issues_section.png";
+import problemImage from "@assets/generated_images/minimal_line_icon_of_a_warped_public_forum_column.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
@@ -59,12 +59,12 @@ export default function Home() {
       <section className="py-24 bg-muted/30 relative">
         <div className="container mx-auto px-4 md:px-6">
           <div className="grid md:grid-cols-2 gap-16 items-center">
-             <div className="order-2 md:order-1 relative">
-                <div className="absolute -inset-4 bg-primary/5 rounded-full blur-3xl" />
+             <div className="order-2 md:order-1 relative flex justify-center">
+                <div className="absolute inset-0 bg-primary/5 rounded-full blur-3xl opacity-50" />
                 <img 
                   src={problemImage} 
-                  alt="Digital fragmentation illustration" 
-                  className="rounded-xl shadow-lg relative z-10 grayscale-[20%] hover:grayscale-0 transition-all duration-500"
+                  alt="Warped public forum column icon" 
+                  className="rounded-xl relative z-10 w-3/4 max-w-sm drop-shadow-sm hover:scale-105 transition-all duration-500"
                 />
              </div>
              <div className="order-1 md:order-2">
