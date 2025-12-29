@@ -2,7 +2,7 @@ import Layout from "@/components/layout/Layout";
 import { Link } from "wouter";
 import { Users, Database, LayoutGrid, Radio, ArrowRight, ExternalLink } from "lucide-react";
 import heroImage from "@assets/MosaicHero_1767024748577.png";
-import problemImage from "@assets/generated_images/clean_minimal_dark_red_ionic_column_icon_with_jagged_crack.png";
+import problemImage from "@assets/generated_images/exact_flat_dark_red_ionic_column_icon_with_crack.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
@@ -63,7 +63,7 @@ export default function Home() {
                 <img 
                   src={problemImage} 
                   alt="Broken public forum column icon" 
-                  className="relative z-10 w-3/4 max-w-xs drop-shadow-sm hover:scale-105 transition-all duration-500 mix-blend-multiply"
+                  className="relative z-10 w-3/4 max-w-xs mix-blend-multiply hover:scale-105 transition-all duration-500"
                 />
              </div>
              <div className="order-1 md:order-2">
