@@ -57,10 +57,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-      
-      {/* Transition Zone */}
-      <div className="w-full h-32 bg-gradient-to-b from-black/95 to-muted/30" />
-
       {/* Problem Section */}
       <section className="py-24 bg-muted/30 relative">
         <div className="container mx-auto px-4 md:px-6">
