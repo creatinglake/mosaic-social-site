@@ -42,7 +42,7 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <Link href="/how-it-works">
+              <Link href="/ecosystem-design">
                 <a className="inline-flex items-center justify-center px-10 py-5 rounded-xl bg-white text-primary font-bold text-xl hover:bg-white/90 transition-all shadow-lg hover:translate-y-[-1px]">
                   Explore how it works
                 </a>
@@ -220,7 +220,7 @@ export default function Home() {
             <p className="text-lg text-primary-foreground/80 mb-8">
               Together, these elements form an open social ecosystem that restores choice, agency, and accountability.
             </p>
-            <Link href="/how-it-works">
+            <Link href="/ecosystem-design">
               <a className="inline-flex items-center gap-2 text-white font-semibold border-b border-mosaic-gold pb-0.5 hover:text-mosaic-gold transition-colors">
                 Explore the full architecture <ArrowRight size={16} />
               </a>

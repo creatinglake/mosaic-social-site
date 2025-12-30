@@ -15,7 +15,6 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-primary mb-4">Ecosystem</h4>
             <ul className="space-y-3">
-              <li><Link href="/how-it-works"><a className="text-muted-foreground hover:text-mosaic-blue transition-colors">How It Works</a></Link></li>
               <li><Link href="/use-cases"><a className="text-muted-foreground hover:text-mosaic-blue transition-colors">Use Cases</a></Link></li>
               <li><Link href="/ecosystem-design"><a className="text-muted-foreground hover:text-mosaic-blue transition-colors">Ecosystem Design</a></Link></li>
             </ul>
