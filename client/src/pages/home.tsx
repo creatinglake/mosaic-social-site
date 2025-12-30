@@ -5,7 +5,7 @@ import heroImage from "@assets/MosaicHero_1767024748577.png";
 import problemImage from "@assets/CrackedCapitolSVG.svg";
 import townSquareImage from "@assets/generated_images/sunny_town_square_with_diverse_community_gathering.png";
 import audienceImage from "@assets/generated_images/subtle_contour_lines_abstract_background.png";
-import collabImage from "@assets/image_1767116064187.png";
+import collabImage from "@assets/image_1767116064187_transparent.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {

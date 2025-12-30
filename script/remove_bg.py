@@ -2,8 +2,8 @@ import numpy as np
 from PIL import Image
 import os
 
-input_path = "attached_assets/generated_images/dark_red_ionic_column_icon_with_jagged_crack_on_white_background.png"
-output_path = "attached_assets/generated_images/dark_red_ionic_column_icon_transparent.png"
+input_path = "attached_assets/image_1767116064187.png"
+output_path = "attached_assets/image_1767116064187_transparent.png"
 
 def make_transparent(input_path, output_path):
     print(f"Processing {input_path}...")
