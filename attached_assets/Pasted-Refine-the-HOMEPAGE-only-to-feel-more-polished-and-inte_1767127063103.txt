@@ -1,0 +1,51 @@
+Refine the HOMEPAGE only to feel more polished and intentional by reducing the “stacked rectangles” look.
+
+Do not rewrite copy, do not change global typography/fonts, and do not redesign the overall layout (nav, hero, section structure). Keep the style clean, professional, and restrained—this should feel like an institutional/serious project, not a template or a playful landing page.
+
+PRIMARY GOAL
+Create a more continuous, cohesive visual flow between sections using:
+1) shared visual fields (“chapters”) where multiple sections sit on a continuous background treatment
+2) subtle soft-edge fades/gradients at a small number of transitions
+3) ONE (1) organic/curved transition moment used intentionally (not repeated)
+
+KEY CONSTRAINTS
+- Do NOT apply curved/wavy transitions to every section.
+- Use at most ONE organic curve/wave across the entire homepage (one hero-to-content transition OR one mid-page pivot transition).
+- Avoid busy patterns, repeated SVG dividers, or anything that looks decorative.
+- Avoid adding box borders / card containers around every section.
+- Keep changes reversible and mostly CSS + minimal markup changes.
+
+WHAT TO IMPLEMENT
+
+A) Shared visual fields (“chapters”)
+- Group adjacent sections into 2–4 visual chapters by giving them a shared background treatment so they feel continuous.
+- Example: a “Problem” chapter might include 1–2 sections on the same subtle background; a “Solution/Vision” chapter might be another; etc.
+- The shared background should be very subtle (light tint, soft texture, or gentle gradient) and must remain consistent with existing site colors.
+- Within a chapter, minimize visible separators—let spacing and hierarchy do the work.
+
+B) Soft edge fades (subtle, limited)
+- Add subtle top/bottom fades between major chapters so the transition feels smooth rather than abrupt.
+- Keep fades extremely subtle (no obvious gradient bands).
+- Use this only at 1–3 chapter boundaries max.
+
+C) One organic moment (single use)
+- Implement ONE organic/curved edge transition (SVG separator OR clip-path) at a single key boundary:
+  - either between the hero and the first content chapter, OR
+  - at a major mid-page pivot (e.g., “It doesn’t have to be this way”).
+- The curve should be shallow and elegant (not wavy or playful).
+- Make sure it never creates horizontal overflow and behaves well on mobile.
+
+D) Maintain readability and hierarchy
+- Preserve existing spacing and typography rhythm, but you may slightly refine vertical padding/margins for better flow.
+- Ensure headings remain visually distinct and scanning is easy.
+- Ensure nothing overlaps or crowds at breakpoints.
+
+E) Responsive sanity checks
+- No horizontal scrolling.
+- Mobile should still feel clean and readable.
+- The left/right alignment and section spacing should remain consistent.
+
+DELIVERABLE
+- Implement these homepage-only improvements.
+- Briefly list what you changed (which sections are grouped into chapters, where fades were added, and where the single organic curve was placed).
+- Keep the overall look subtle and professional—visually “more finished,” not “more decorated.”

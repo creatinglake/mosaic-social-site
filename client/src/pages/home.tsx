@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pb-16">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
           <img 
@@ -56,46 +56,58 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </section>
-      {/* Problem Section */}
-      <section className="py-24 bg-muted/30 relative">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-             <div className="order-2 md:order-1 relative flex justify-center">
-                <div className="absolute inset-0 bg-[#360505]/5 rounded-full blur-3xl opacity-50" />
-                <div 
-                  className="relative z-10 w-full max-w-sm drop-shadow-sm hover:scale-105 transition-all duration-500 bg-[#360505]"
-                  style={{ 
-                    maskImage: `url(${problemImage})`,
-                    WebkitMaskImage: `url(${problemImage})`,
-                    maskSize: 'contain',
-                    WebkitMaskSize: 'contain',
-                    maskRepeat: 'no-repeat',
-                    WebkitMaskRepeat: 'no-repeat',
-                    maskPosition: 'center',
-                    WebkitMaskPosition: 'center',
-                    aspectRatio: '1224/1189'
-                  }}
-                />
-             </div>
-             <div className="order-1 md:order-2">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#360505]">Social media is harming society</h2>
-                <div className="prose prose-lg text-foreground/80 space-y-6">
-                  <p>
-                    The problem with today's social media isn't just content or moderation—it's structural.
-                  </p>
-                  <p>
-                    Most platforms are optimized for advertising and engagement above all else. Opaque algorithms amplify conflict and polarization. Personal data is harvested and monetized. Creators and communities are locked into systems they don't control.
-                  </p>
-                  <p>
-                    The result is a digital environment that distorts public discourse, erodes trust, and weakens civil liberties in the digital age.
-                  </p>
-                </div>
-             </div>
-          </div>
+
+        {/* Organic Curve Transition */}
+        <div className="absolute bottom-0 left-0 w-full h-16 md:h-24 pointer-events-none z-20">
+           <svg className="w-full h-full text-muted/30 fill-current" viewBox="0 0 1440 100" preserveAspectRatio="none">
+             <path d="M0,100 C480,0 960,0 1440,100 Z" />
+           </svg>
         </div>
       </section>
-      {/* Hope Section */}
+
+      {/* Chapter 1: The Challenge */}
+      <div className="bg-muted/30">
+        {/* Problem Section */}
+        <section className="py-24 relative">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="grid md:grid-cols-2 gap-16 items-center">
+               <div className="order-2 md:order-1 relative flex justify-center">
+                  <div className="absolute inset-0 bg-[#360505]/5 rounded-full blur-3xl opacity-50" />
+                  <div 
+                    className="relative z-10 w-full max-w-sm drop-shadow-sm hover:scale-105 transition-all duration-500 bg-[#360505]"
+                    style={{ 
+                      maskImage: `url(${problemImage})`,
+                      WebkitMaskImage: `url(${problemImage})`,
+                      maskSize: 'contain',
+                      WebkitMaskSize: 'contain',
+                      maskRepeat: 'no-repeat',
+                      WebkitMaskRepeat: 'no-repeat',
+                      maskPosition: 'center',
+                      WebkitMaskPosition: 'center',
+                      aspectRatio: '1224/1189'
+                    }}
+                  />
+               </div>
+               <div className="order-1 md:order-2">
+                  <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#360505]">Social media is harming society</h2>
+                  <div className="prose prose-lg text-foreground/80 space-y-6">
+                    <p>
+                      The problem with today's social media isn't just content or moderation—it's structural.
+                    </p>
+                    <p>
+                      Most platforms are optimized for advertising and engagement above all else. Opaque algorithms amplify conflict and polarization. Personal data is harvested and monetized. Creators and communities are locked into systems they don't control.
+                    </p>
+                    <p>
+                      The result is a digital environment that distorts public discourse, erodes trust, and weakens civil liberties in the digital age.
+                    </p>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      {/* Hope Section (Visual Pivot) */}
       <section className="relative pt-40 pb-20 flex items-center justify-center overflow-hidden">
         {/* Background Image & Overlay */}
         <div className="absolute inset-0 z-0">
