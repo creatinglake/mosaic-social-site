@@ -318,6 +318,11 @@ export default function Home() {
                   Mosaic's next step is a collaborative ecosystem design process—bringing together technologists, social scientists, creators, service providers, and funders to define the standards, governance, and architecture for a new social media commons.
                 </p>
               </div>
+              <Link href="/ecosystem-design">
+                <a className="inline-flex items-center justify-center px-8 py-4 rounded-xl bg-primary text-white font-semibold text-lg hover:bg-primary/90 transition-all shadow-md hover:translate-y-[-1px]">
+                  View the Ecosystem Design (Working Draft)
+                </a>
+              </Link>
             </div>
             <div className="flex justify-center order-1 md:order-2">
                <img 
