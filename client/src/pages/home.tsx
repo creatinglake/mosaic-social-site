@@ -310,9 +310,12 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
             <div className="text-left order-2 md:order-1">
               <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">A collaborative design process</h2>
-              <div className="prose prose-lg text-foreground/80 mb-8">
+              <div className="prose prose-lg text-foreground/80 mb-8 space-y-6">
                 <p>
-                  The social media problem spans technology, governance, economics, mental health, and democracy. No single person or organization can solve it alone.
+                  The social media problem spans technology, governance, economics, mental health, and democracy.
+                </p>
+                <p>
+                  No single person or organization can solve it alone.
                 </p>
                 <p>
                   Mosaic's next step is a collaborative ecosystem design process—bringing together technologists, social scientists, creators, service providers, and funders to define the standards, governance, and architecture for a new social media commons.
