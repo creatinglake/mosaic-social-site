@@ -110,10 +110,38 @@ export default function EcosystemDesign() {
 
   return (
     <Layout>
-      {/* Decorative Header Background */}
-      <div className="absolute top-0 left-0 w-full h-[400px] bg-gradient-to-b from-primary/5 via-primary/5 to-transparent pointer-events-none -z-10" />
-      
-      <main className="container mx-auto px-4 md:px-6 py-12 md:py-24 max-w-7xl relative">
+      {/* Header Banner */}
+      <div className="w-full bg-gradient-to-b from-[#1E3F6B]/5 to-background border-b border-border/40 pt-28 pb-16 relative overflow-hidden">
+        {/* Abstract background element */}
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-bl from-[#84B5DD]/10 to-transparent pointer-events-none" />
+        
+        <div className="container mx-auto px-4 md:px-6 max-w-7xl relative z-10">
+          <div className="max-w-4xl">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-primary tracking-tight">
+              Mosaic Ecosystem Design
+            </h1>
+            
+            <div className="flex flex-col sm:flex-row sm:items-center gap-4 mb-8">
+              <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-semibold border border-primary/20">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-primary opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-primary"></span>
+                </span>
+                WORKING DRAFT
+              </div>
+              <div className="text-sm text-muted-foreground font-medium">
+                Scope: Architecture, Governance, Interoperability
+              </div>
+            </div>
+            
+            <p className="text-xl md:text-2xl text-foreground/80 leading-relaxed font-light max-w-3xl">
+              Mosaic is a proposal for a different kind of social media—one built around human well-being, democratic health, and long-term public value.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <main className="container mx-auto px-4 md:px-6 py-12 max-w-7xl relative">
         <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-12 relative">
           
           {/* Desktop Table of Contents */}
@@ -144,30 +172,13 @@ export default function EcosystemDesign() {
           {/* Main Content */}
           <article className="prose prose-lg prose-slate max-w-none">
             
-            {/* Header */}
-            <div className="mb-12 border-b border-border pb-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-2 text-primary tracking-tight">
-                Mosaic Ecosystem Design
-              </h1>
-              <div className="inline-block px-3 py-1 mb-6 rounded-full bg-secondary/10 text-secondary text-sm font-semibold uppercase tracking-wider">
-                Working Draft
-              </div>
-              <p className="text-xl text-muted-foreground leading-relaxed mb-6">
-                Mosaic is a proposal for a different kind of social media—one built around human well-being, democratic health, and long-term public value instead of maximizing engagement.
+            {/* Disclaimer Box */}
+            <div className="bg-secondary/10 border-l-4 border-secondary p-6 rounded-r-lg mb-16">
+              <p className="font-medium text-foreground italic mb-2 mt-0">
+                This is a working draft. It's incomplete on purpose.
               </p>
-              
-              <div className="bg-secondary/10 border-l-4 border-secondary p-6 rounded-r-lg my-8">
-                <p className="font-medium text-foreground italic mb-4">
-                  This is a working draft. It's incomplete on purpose. We're publishing it to invite criticism, ideas, and collaboration.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 text-sm text-muted-foreground">
-                  <div><span className="font-semibold text-foreground">Status:</span> Working draft</div>
-                  <div><span className="font-semibold text-foreground">Scope:</span> Ecosystem architecture, governance, and interoperability</div>
-                </div>
-              </div>
-              
-              <p>
-                This document lays out a possible direction for Mosaic. It explores how a human-centered, interoperable social media ecosystem could work, not a commitment to build any specific product or platform.
+              <p className="text-muted-foreground m-0">
+                We're publishing it to invite criticism, ideas, and collaboration. It explores how a human-centered, interoperable social media ecosystem could work, not a commitment to build any specific product.
               </p>
             </div>
 
