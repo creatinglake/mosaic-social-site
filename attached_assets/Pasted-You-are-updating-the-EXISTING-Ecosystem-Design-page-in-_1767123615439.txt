@@ -1,0 +1,43 @@
+You are updating the EXISTING “Ecosystem Design” page in this static Mosaic site. Do not create new pages or change routing, build tooling, or file structure. Only update the page’s HTML structure (and minimal page-specific CSS/JS if absolutely needed) so it can scale into a long-form, docs-like document over time.
+
+CONTENT
+- I will provide the full copy below under the heading: “Mosaic Ecosystem Design Page MVP Copy”.
+- Use that copy as the source of truth. Do not rewrite it. Only add minimal markup (headings, sections, lists) and light formatting.
+
+PRIMARY GOAL
+Design the page so it remains user-friendly as it grows significantly (many more sections, subsections, and deep dives), while staying consistent with the site’s existing typography and design system.
+
+STRUCTURE REQUIREMENTS
+1) Semantic, expandable structure
+- Wrap the content in <main>.
+- Each major topic should be its own <section> with a stable id for anchor linking.
+- Use a clear heading hierarchy: H1 for the page title, H2 for major sections, H3 for subsections.
+- Make headings linkable (anchor targets) without visually cluttering the page.
+
+2) In-page navigation (docs-lite)
+- Add an “On this page” table of contents that links to each major section id.
+- Desktop behavior: keep the TOC visible while scrolling (sticky) if it fits the existing layout without breaking it.
+- Mobile behavior: the TOC should collapse into a simple toggle (“Contents”) to avoid taking over the screen.
+- No heavy JS frameworks. Use minimal vanilla JS only if needed; prefer CSS where possible.
+
+3) Progressive disclosure for future expansion
+- Support optional collapsible subsections using native <details>/<summary> for future “deep dive” areas.
+- Do NOT collapse the main sections by default. Only use <details> for secondary/optional material.
+- Ensure <details> styling fits the existing design system.
+
+4) Reading + diagram readiness (no diagrams required now)
+- Style content elements so future diagrams/images can be added without breaking layout:
+  - Images/SVGs should be responsive (scale down on small screens).
+  - Provide a simple “figure + caption” pattern that can be used later.
+- Do not add placeholder diagrams, but do ensure the CSS won’t cause overflow.
+
+5) Consistency + restraint
+- Do NOT introduce new font families. Use the site-wide typography.
+- Keep any page-specific CSS minimal and consistent with existing colors/spacing.
+- Do not add marketing CTAs, sign-up components, or heavy animations.
+
+OUTPUT EXPECTATIONS
+- Update the existing Ecosystem Design page to use the structure above and render the provided copy cleanly.
+- If you add CSS/JS, keep it minimal and scoped to this page only.
+
+NOW HERE IS THE CONTENT:
