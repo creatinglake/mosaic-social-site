@@ -1,0 +1,44 @@
+The last attempt only added a single curved separator and it renders incorrectly (it sits behind the next section mask/background). Try again with a different approach.
+
+PRIMARY GOAL (DO THIS FIRST)
+Make the homepage feel more polished by creating “shared visual fields” (chapters) and using subtle gradient/fade transitions between major chapters. This should reduce the feeling of stacked rectangles WITHOUT adding lots of shapes.
+
+SECONDARY GOAL (OPTIONAL)
+If you add ONE curved transition, it must render correctly (on top of backgrounds, not hidden) and be shallow and subtle. If you can’t make it work cleanly, skip curved transitions entirely.
+
+CONSTRAINTS
+- Do not change typography, fonts, or rewrite copy.
+- Do not change overall layout or nav.
+- Avoid busy decorative dividers.
+- No card borders/boxes around every section.
+- Keep changes mostly CSS, minimal HTML changes allowed to add wrappers.
+
+IMPLEMENTATION DETAILS
+
+A) Create 2–4 “chapters” on the homepage
+- Group adjacent sections into chapter wrappers (e.g., <div class="chapter chapter--light"> ... </div>).
+- Each chapter should have a continuous background treatment so multiple sections feel like one visual field.
+- Background treatments should be subtle and consistent with existing site colors (very light tints or gentle gradients).
+- Within a chapter, remove hard separators; rely on spacing.
+
+B) Add subtle fade transitions BETWEEN chapters
+- At the boundary between chapters, add a soft top/bottom fade:
+  - either a subtle linear-gradient background on the chapter edge
+  - or a pseudo-element overlay (:before/:after) that fades into the next chapter’s background.
+- Keep fades very subtle (no obvious bands).
+
+C) Fix the “curve behind mask” issue if using any curve (optional)
+If you add one curved separator between hero and the next chapter:
+- Implement it as an SVG element placed at the bottom of the hero section (or top of next chapter).
+- Ensure it is visible by setting proper stacking and overflow:
+  - the hero should have position: relative;
+  - the SVG separator should be position: absolute; bottom: 0; left: 0; width: 100%;
+  - set z-index so it renders above the hero overlay but below the nav
+  - the next section/chapter must not cover it; if needed, add padding-top to the next chapter so the separator has space.
+  - avoid overflow hidden on parent containers that clip it incorrectly.
+- Ensure no horizontal overflow on mobile.
+
+DELIVERABLE
+- Implement chapters + fades across the homepage.
+- If you also implement one curve, ensure it is fully visible and not clipped/hidden.
+- Briefly list: which sections are grouped into which chapters, and where fades are applied.
