@@ -22,7 +22,6 @@ export default function Navbar() {
     { href: "/", label: "Home" },
     { href: "/use-cases", label: "Use Cases" },
     { href: "/ecosystem-design", label: "Ecosystem Design" },
-    { href: "/roadmap", label: "Roadmap" },
     { href: "/contact", label: "Contact" },
   ];
 

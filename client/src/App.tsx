@@ -7,7 +7,6 @@ import NotFound from "@/pages/not-found";
 import Home from "@/pages/home";
 import UseCases from "@/pages/use-cases";
 import EcosystemDesign from "@/pages/ecosystem-design";
-import Roadmap from "@/pages/roadmap";
 import Contact from "@/pages/contact";
 
 function Router() {
@@ -16,7 +15,6 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/use-cases" component={UseCases} />
       <Route path="/ecosystem-design" component={EcosystemDesign} />
-      <Route path="/roadmap" component={Roadmap} />
       <Route path="/contact" component={Contact} />
       <Route component={NotFound} />
     </Switch>
