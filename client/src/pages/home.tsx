@@ -64,7 +64,7 @@ export default function Home() {
              <div className="order-2 md:order-1 relative flex justify-center">
                 <div className="absolute inset-0 bg-[#360505]/5 rounded-full blur-3xl opacity-50" />
                 <div 
-                  className="relative z-10 w-full max-w-sm drop-shadow-sm hover:scale-105 transition-all duration-500 bg-[#360505]"
+                  className="relative z-10 w-full max-w-[21.6rem] drop-shadow-sm hover:scale-105 transition-all duration-500 bg-[#360505]"
                   style={{ 
                     maskImage: `url(${problemImage})`,
                     WebkitMaskImage: `url(${problemImage})`,
