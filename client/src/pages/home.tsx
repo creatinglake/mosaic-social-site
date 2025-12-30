@@ -56,7 +56,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Problem Section */}
       <section className="py-24 bg-muted/30 relative">
         <div className="container mx-auto px-4 md:px-6">
@@ -79,7 +78,7 @@ export default function Home() {
                 />
              </div>
              <div className="order-1 md:order-2">
-                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#360505]">Social media is failing society</h2>
+                <h2 className="text-3xl md:text-4xl font-bold mb-6 text-[#360505]">Social media is harming society</h2>
                 <div className="prose prose-lg text-foreground/80 space-y-6">
                   <p>
                     The problem with today's social media isn't just content or moderation—it's structural.
@@ -95,7 +94,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Hope Section */}
       <section className="relative pt-40 pb-20 flex items-center justify-center overflow-hidden">
         {/* Background Image & Overlay */}
@@ -130,7 +128,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* What is Mosaic Section */}
       <section className="py-24 bg-transparent">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl">
@@ -160,7 +157,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* How Mosaic Works - Deep Blue Band */}
       <section className="py-24 bg-primary text-primary-foreground relative overflow-hidden">
         <div className="absolute inset-0 bg-pattern-mesh opacity-[0.1]" />
@@ -231,7 +227,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Audience Section */}
       <section className="py-24 relative overflow-hidden">
         {/* Background Image & Overlay */}
@@ -306,7 +301,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Process Section */}
       <section className="py-24 bg-secondary/5 relative overflow-hidden">
         <div className="absolute left-0 bottom-0 w-full h-1/2 bg-pattern-voronoi opacity-[0.03]" />
@@ -323,7 +317,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       {/* Get Involved Section */}
       <section id="get-involved" className="py-32 bg-primary text-primary-foreground text-center">
         <div className="container mx-auto px-4 md:px-6 max-w-3xl">
