@@ -143,8 +143,9 @@ export default function EcosystemDesign() {
             
             {/* Header */}
             <div className="mb-12 border-b border-border pb-8">
-              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary tracking-tight">Mosaic Ecosystem Design 
-              (Working Draft)</h1>
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-primary tracking-tight">
+                Mosaic Ecosystem Design (Working Draft)
+              </h1>
               <p className="text-xl text-muted-foreground leading-relaxed mb-6">
                 Mosaic is a proposal for a different kind of social media—one built around human well-being, democratic health, and long-term public value instead of maximizing engagement.
               </p>
