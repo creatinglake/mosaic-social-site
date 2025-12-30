@@ -5,6 +5,7 @@ import heroImage from "@assets/MosaicHero_1767024748577.png";
 import problemImage from "@assets/CrackedCapitolSVG.svg";
 import townSquareImage from "@assets/generated_images/sunny_town_square_with_diverse_community_gathering.png";
 import audienceImage from "@assets/generated_images/subtle_contour_lines_abstract_background.png";
+import collabImage from "@assets/image_1767116064187.png";
 
 export default function Home() {
   const scrollToGetInvolved = () => {
@@ -305,15 +306,26 @@ export default function Home() {
       <section className="py-24 bg-secondary/5 relative overflow-hidden">
         <div className="absolute left-0 bottom-0 w-full h-1/2 bg-pattern-voronoi opacity-[0.03]" />
         
-        <div className="container mx-auto px-4 md:px-6 max-w-4xl text-center relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">A collaborative design process</h2>
-          <div className="prose prose-lg mx-auto text-foreground/80 mb-8">
-            <p>
-              The social media problem spans technology, governance, economics, mental health, and democracy. No single person or organization can solve it alone.
-            </p>
-            <p>
-              Mosaic's next step is a collaborative ecosystem design process—bringing together technologists, social scientists, creators, service providers, and funders to define the standards, governance, and architecture for a new social media commons.
-            </p>
+        <div className="container mx-auto px-4 md:px-6 relative z-10">
+          <div className="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="text-left order-2 md:order-1">
+              <h2 className="text-3xl md:text-4xl font-bold mb-8 text-primary">A collaborative design process</h2>
+              <div className="prose prose-lg text-foreground/80 mb-8">
+                <p>
+                  The social media problem spans technology, governance, economics, mental health, and democracy. No single person or organization can solve it alone.
+                </p>
+                <p>
+                  Mosaic's next step is a collaborative ecosystem design process—bringing together technologists, social scientists, creators, service providers, and funders to define the standards, governance, and architecture for a new social media commons.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center order-1 md:order-2">
+               <img 
+                 src={collabImage} 
+                 alt="Collaborative design process illustration" 
+                 className="w-full max-w-md h-auto object-contain drop-shadow-md mix-blend-multiply opacity-90"
+               />
+            </div>
           </div>
         </div>
       </section>
