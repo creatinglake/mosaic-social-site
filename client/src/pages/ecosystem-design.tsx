@@ -110,7 +110,10 @@ export default function EcosystemDesign() {
 
   return (
     <Layout>
-      <main className="container mx-auto px-4 md:px-6 py-12 md:py-24 max-w-7xl">
+      {/* Decorative Header Background */}
+      <div className="absolute top-0 left-0 w-full h-[400px] bg-gradient-to-b from-primary/5 via-primary/5 to-transparent pointer-events-none -z-10" />
+      
+      <main className="container mx-auto px-4 md:px-6 py-12 md:py-24 max-w-7xl relative">
         <div className="grid grid-cols-1 lg:grid-cols-[250px_1fr] gap-12 relative">
           
           {/* Desktop Table of Contents */}
