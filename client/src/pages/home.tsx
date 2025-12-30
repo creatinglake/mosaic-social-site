@@ -195,8 +195,8 @@ export default function Home() {
 
             {/* Element 3 */}
             <div className="flex flex-col items-center text-center p-6 group">
-              <div className="mb-6 text-mosaic-gold transform group-hover:scale-110 transition-transform duration-300">
-                <LayoutGrid size={52} strokeWidth={1.5} />
+              <div className="mb-6 text-mosaic-gold transform group-hover:scale-110 transition-transform duration-300 flex items-center justify-center h-[52px] w-[52px]">
+                <img src="/assets/icons/spaces-hexagons.svg" alt="Spaces" className="w-[52px] h-[52px] text-mosaic-gold" style={{ filter: 'brightness(0) saturate(100%) invert(77%) sepia(26%) saturate(1478%) hue-rotate(359deg) brightness(101%) contrast(106%)' }} />
               </div>
               <h3 className="text-xl font-bold mb-3 text-white">Spaces</h3>
               <p className="text-primary-foreground/70 leading-relaxed">
