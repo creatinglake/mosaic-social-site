@@ -56,6 +56,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        
+        {/* Soft fade transition to next section */}
+        <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent z-10 pointer-events-none" />
       </section>
       {/* Problem Section */}
       <section className="py-24 bg-muted/30 relative">
